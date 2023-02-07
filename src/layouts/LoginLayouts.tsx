@@ -11,7 +11,6 @@ export default function LoginLayout({ children }): any {
         {`
           body {
             margin: 0;
-            background-color: red;
           }
         `}
       </style>
