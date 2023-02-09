@@ -1,4 +1,5 @@
 // @ts-ignore
+import styles from "@/styles/Home.module.css";
 
 export default function LoginLayout({ children }): any {
   return (
@@ -10,7 +11,7 @@ export default function LoginLayout({ children }): any {
       <style jsx global>
         {`
           body {
-            margin: 0;
+            padding: 10px;
           }
         `}
       </style>
