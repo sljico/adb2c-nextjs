@@ -1,6 +1,4 @@
 // @ts-ignore
-import styles from "@/styles/Home.module.css";
-
 export default function LoginLayout({ children }: any): any {
   return (
     <>
