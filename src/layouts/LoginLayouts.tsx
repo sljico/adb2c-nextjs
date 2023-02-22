@@ -144,6 +144,7 @@ export default function LoginLayout({ children }: any): any {
 
           .attrEntry input,
           .entry-item input {
+            box-sizing: border-box;
             background-clip: padding-box;
             background-color: transparent;
             background-image: none;
