@@ -34,7 +34,7 @@ export default function Login() {
           </li>
         </div>
       </LoginLayout>
-      <Script id="signup-script">
+      {/* <Script id="signup-script">
         {`
           (function () {
             let tc = document.getElementById('extension_termsOfUseContentWrapper');
@@ -48,15 +48,15 @@ export default function Login() {
             insertBefore(p, checkbox);
 
             function detach(el) {
-              return el.parentNode.removeChild(el);
+              return el?.parentNode.removeChild(el);
             }
 
             function insertBefore(newNode, referenceNode) {
-              referenceNode.parentNode.insertBefore(newNode, referenceNode);
+              referenceNode?.parentNode.insertBefore(newNode, referenceNode);
             }
           })();
         `}
-      </Script>
+      </Script> */}
     </>
   );
 }
