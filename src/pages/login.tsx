@@ -13,7 +13,10 @@ export default function Login() {
   );
 }
 
-const allowedOrigins = ["https://adb2c-nextjs.vercel.app"];
+const allowedOrigins = [
+  "https://adb2c-nextjs.vercel.app",
+  "https://gworthpoc.b2clogin.com",
+];
 export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
   const { origin } = req.headers;
 
