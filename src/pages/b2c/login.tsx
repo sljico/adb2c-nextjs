@@ -3,13 +3,13 @@ import { GetServerSideProps } from "next";
 
 export default function Login() {
   return (
-    <>
-      <LoginLayout>
-        <div id="api"></div>
-      </LoginLayout>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam numquam
-      voluptatem quasi aut veniam eos nobis in provident hic quibusdam.
-    </>
+    <LoginLayout>
+      <div className="carescoutB2cLayout">
+        <section>
+          <div id="api" className="b2c-login"></div>
+        </section>
+      </div>
+    </LoginLayout>
   );
 }
 
