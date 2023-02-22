@@ -13,7 +13,7 @@ export default function Login() {
   );
 }
 
-const allowedOrigins = [""];
+const allowedOrigins = ["https://adb2c-nextjs.vercel.app"];
 export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
   const { origin } = req.headers;
 
