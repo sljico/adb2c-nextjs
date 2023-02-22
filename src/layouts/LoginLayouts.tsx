@@ -4,7 +4,6 @@ import { Header } from "@/components/Header/Header";
 export default function LoginLayout({ children }: any): any {
   return (
     <div>
-      <Header />
       <main id="main" role="main">
         <div className="carescoutB2cLayout">
           <section>
