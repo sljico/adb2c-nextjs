@@ -34,7 +34,7 @@ export default function Login() {
           </li>
         </div>
       </LoginLayout>
-      {/* <Script id="signup-script">
+      <Script id="signup-script">
         {`
           (function () {
             let tc = document.getElementById('extension_termsOfUseContentWrapper');
@@ -56,7 +56,7 @@ export default function Login() {
             }
           })();
         `}
-      </Script> */}
+      </Script>
     </>
   );
 }
