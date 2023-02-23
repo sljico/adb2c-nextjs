@@ -35,19 +35,7 @@ export default function Login() {
           </li>
         </div>
       </LoginLayout>
-      <Script
-        src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
-        onLoad={() => {
-          console.log("loaded lodash");
-        }}
-      />
-      <Script
-        id="signup-script"
-        strategy="beforeInteractive"
-        onError={(e) => {
-          console.error("Script failed to load", e);
-        }}
-      >
+      <Script id="signup-script" strategy="beforeInteractive">
         {`
             let tc = document.getElementById('extension_termsOfUseContentWrapper');
             let checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
@@ -57,7 +45,7 @@ export default function Login() {
 
             setTimeout(() => {
               console.log('timeout ', document.getElementById('test'))
-            }, 1000);
+            }, 1500);
             console.log(tc)
             console.log(checkbox)
 
@@ -65,13 +53,13 @@ export default function Login() {
             // insertBefore(tc, checkbox);
             // insertBefore(p, checkbox);
 
-            // function detach(el) {
-            //   return el?.parentNode.removeChild(el);
-            // }
+            function detach(el) {
+              return el?.parentNode.removeChild(el);
+            }
 
-            // function insertBefore(newNode, referenceNode) {
-            //   referenceNode?.parentNode.insertBefore(newNode, referenceNode);
-            // }
+            function insertBefore(newNode, referenceNode) {
+              referenceNode?.parentNode.insertBefore(newNode, referenceNode);
+            }
         `}
       </Script>
     </>
