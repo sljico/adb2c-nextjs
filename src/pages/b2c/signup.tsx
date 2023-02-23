@@ -6,9 +6,15 @@ export { getServerSideProps } from "./login";
 export default function Login() {
   return (
     <>
-      <Head>
-        <Script id="test">console.log('dasdasdasdasd')</Script>
-      </Head>
+      <Head></Head>
+      <Script id="test">console.log('dasdasdasdasd')</Script>
+      <Script
+        src="https://connect.facebook.net/en_US/sdk.js"
+        strategy="lazyOnload"
+        onLoad={() =>
+          console.log(`script loaded correctly, window.FB has been populated`)
+        }
+      />
       <LoginLayout>
         <div className="carescoutB2cLayout">
           <section>
