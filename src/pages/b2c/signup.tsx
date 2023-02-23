@@ -55,6 +55,9 @@ export default function Login() {
             let paraTextNode = document.createTextNode('HIPPA Authroization');
             p.appendChild(paraTextNode);
 
+            setTimeout(() => {
+              console.log('timeout ', tc)
+            }, 5000);
             console.log(tc)
             console.log(checkbox)
 
