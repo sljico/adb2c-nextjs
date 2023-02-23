@@ -36,6 +36,7 @@ export default function Login() {
       </LoginLayout>
       <Script id="signup-script">
         {`
+          console.log('dada');
           (function () {
             let tc = document.getElementById('extension_termsOfUseContentWrapper');
             let checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
