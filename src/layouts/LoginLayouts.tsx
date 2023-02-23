@@ -30,6 +30,7 @@ export default function LoginLayout({ children }: any): any {
           main {
             margin: auto;
             max-width: 420px;
+            padding: 10% 0;
           }
 
           a {
