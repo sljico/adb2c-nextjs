@@ -34,7 +34,7 @@ export default function Login() {
           </li>
         </div>
       </LoginLayout>
-      <Script id="signup-script">
+      <Script id="signup-script" strategy="beforeInteractive">
         {`
           console.log('dada');
           (function () {
