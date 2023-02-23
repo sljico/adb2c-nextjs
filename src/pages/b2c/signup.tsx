@@ -42,9 +42,13 @@ export default function Login() {
                 <div>
                   <a href="#">Terms of Service</a>
                 </div>
+                <br />
+                <br />
                 <div>
                   <a href="#">Privacy Policy</a>
                 </div>
+                <br />
+                <br />
                 <div>
                   <a href="#">Accessibility</a>
                 </div>
