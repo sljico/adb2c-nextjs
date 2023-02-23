@@ -181,6 +181,10 @@ export default function LoginLayout({ children }: any): any {
             border: 1px solid #7848ff;
           }
 
+          .verifyInput {
+            margin-bottom: 22px;
+          }
+
           #forgotPassword {
             float: right;
             font-size: 0.8rem;
@@ -201,30 +205,6 @@ export default function LoginLayout({ children }: any): any {
             color: #333;
             border: 1px solid #333;
             font-weight: 400;
-          }
-
-          @media (min-width: 320px) {
-            .buttons #email_ver_but_verify {
-              margin-bottom: 20px;
-            }
-
-            .buttons #email_ver_but_verify,
-            .buttons #email_ver_but_resend {
-              width: 100% !important;
-            }
-          }
-
-          @media (min-width: 400px) {
-            .buttons #email_ver_but_verify {
-              margin-bottom: 0;
-              margin-right: 36px;
-            }
-
-            .buttons #email_ver_but_verify,
-            .buttons #email_ver_but_resend {
-              width: 45% !important;
-              padding: 0.85rem 0.52rem;
-            }
           }
 
           #api #emailVerificationControl_but_verify_code,
@@ -369,6 +349,30 @@ export default function LoginLayout({ children }: any): any {
 
           textarea::-webkit-scrollbar-thumb {
             background: #545433;
+          }
+
+          @media (min-width: 320px) {
+            .buttons #email_ver_but_verify {
+              margin-bottom: 20px;
+            }
+
+            .buttons #email_ver_but_verify,
+            .buttons #email_ver_but_resend {
+              width: 100% !important;
+            }
+          }
+
+          @media (min-width: 400px) {
+            .buttons #email_ver_but_verify {
+              margin-bottom: 0;
+              margin-right: 36px;
+            }
+
+            .buttons #email_ver_but_verify,
+            .buttons #email_ver_but_resend {
+              width: 45% !important;
+              padding: 0.85rem 0.52rem;
+            }
           }
         `}
       </style>
