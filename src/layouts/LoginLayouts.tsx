@@ -254,18 +254,14 @@ export default function LoginLayout({ children }: any): any {
             margin: 35px 0;
           }
 
-          #extension_termsOfUseContentWrapper label,
-          #extension_termsOfUseContentWrapper + p {
-            font-weight: 700;
-            font-size: 28px;
-            color: #333;
-          }
-
-          #extension_termsOfUseContentWrapper + p {
+          #extension_termsOfUseContentWrapper p {
             margin: 0;
             padding-bottom: 35px;
             margin-bottom: 31px;
             border-bottom: 1px solid #919191;
+            font-weight: 700;
+            font-size: 28px;
+            color: #333;
           }
 
           #api ul {
