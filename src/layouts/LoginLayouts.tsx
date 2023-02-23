@@ -263,6 +263,10 @@ export default function LoginLayout({ children }: any): any {
             color: #333;
           }
 
+          #extension_termsOfUseContentWrapper + p {
+            padding-bottom: 20px;
+          }
+
           #extension_termsOfUseContentWrapper p {
             border: none;
           }
