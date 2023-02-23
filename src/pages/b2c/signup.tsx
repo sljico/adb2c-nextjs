@@ -34,7 +34,7 @@ export default function Login() {
           </li>
         </div>
       </LoginLayout>
-      <Script id="signup-script" strategy="afterInteractive" async defer>
+      <Script id="signup-script" strategy="lazyOnload">
         {`
           console.log('dada');
           (function () {
