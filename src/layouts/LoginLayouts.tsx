@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header/Header";
+import Script from "next/script";
 
 // @ts-ignore
 export default function LoginLayout({ children }: any): any {
@@ -377,6 +378,12 @@ export default function LoginLayout({ children }: any): any {
           }
         `}
       </style>
+      <Script id="signup-script" strategy="afterInteractive">
+        {`
+          let tc = document.getElementById('extension_termsOfUseContentWrapper');
+          console.log('dadada', tc);
+        `}
+      </Script>
     </div>
   );
 }
