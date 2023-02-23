@@ -198,6 +198,14 @@ export default function LoginLayout({ children }: any): any {
             justify-content: space-between;
           }
 
+          .buttons .verifyButton + .sendButton {
+            width: 45% !important;
+            padding: 0;
+          }
+
+          .buttons .sendButton {
+          }
+
           #api #emailVerificationControl_but_verify_code,
           #api #emailVerificationControl_but_send_new_code {
             width: 162px !important;
