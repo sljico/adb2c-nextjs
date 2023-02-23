@@ -13,7 +13,7 @@ export default function Login() {
           </section>
         </div>
 
-        <div>
+        <div id="test">
           <li id="extension_termsOfUseContentWrapper" className="TextBox">
             <div className="attrEntry">
               <label htmlFor="extension_termsOfUseContent">
@@ -56,7 +56,7 @@ export default function Login() {
             p.appendChild(paraTextNode);
 
             setTimeout(() => {
-              console.log('timeout ', tc)
+              console.log('timeout ', document.getElementById('test'))
             }, 5000);
             console.log(tc)
             console.log(checkbox)
@@ -72,17 +72,6 @@ export default function Login() {
             // function insertBefore(newNode, referenceNode) {
             //   referenceNode?.parentNode.insertBefore(newNode, referenceNode);
             // }
-        `}
-      </Script>
-      <Script
-        id="signup-script2"
-        strategy="afterInteractive"
-        onError={(e) => {
-          console.error("Script failed to load", e);
-        }}
-      >
-        {`
-          console.log(tc);
         `}
       </Script>
     </>

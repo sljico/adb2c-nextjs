@@ -186,6 +186,10 @@ export default function LoginLayout({ children }: any): any {
             margin-bottom: 22px !important;
           }
 
+          .verificationInfoText {
+            padding-bottom: 15px;
+          }
+
           #forgotPassword {
             float: right;
             font-size: 0.8rem;
