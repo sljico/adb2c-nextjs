@@ -49,6 +49,7 @@ export default function Login() {
               const checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
               console.log('timeout ', test, checkbox)
               detach(test);
+              insertBefore(test, checkbox);
             }, 1500);
             console.log(tc)
             console.log(checkbox)
