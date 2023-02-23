@@ -282,9 +282,9 @@ export default function LoginLayout({ children }: any): any {
             padding: 0;
             border-radius: 0;
             height: 200px;
-            // padding-right: 25px;
-            // width: calc(100% - 25px);
+            padding-right: 25px;
             margin-top: 10px;
+            overflow: scroll;
           }
 
           #extension_termsOfUseContent:focus-visible {
