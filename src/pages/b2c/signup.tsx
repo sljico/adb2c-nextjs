@@ -60,14 +60,14 @@ export default function Login() {
       <Script id="signup-script" strategy="beforeInteractive">
         {` 
             setTimeout(() => {
-              const test = document.getElementById('extension_termsOfUseContentWrapper');
+              const tcWrapper = document.getElementById('extension_termsOfUseContentWrapper');
               const checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
               const p = document.createElement('p');
               const paraTextNode = document.createTextNode('HIPPA Authroization');
               p.appendChild(paraTextNode);
-              console.log('timeout ', test, checkbox)
-              detach(test);
-              insertBefore(test, checkbox);
+
+              detach(tcWrapper);
+              insertBefore(tcWrapper, checkbox);
               insertBefore(p, checkbox);
             }, 1500);
 

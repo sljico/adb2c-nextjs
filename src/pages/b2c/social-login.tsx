@@ -57,7 +57,9 @@ const SocialLogin: NextPage<unknown> = () => {
       <Script id="social-login-script" strategy="beforeInteractive">
         {`
           setTimeout(() => {
-            detach(document.getElementById("extension_termsOfUseContentWrapper"));
+            const tcWrapper = document.getElementById('extension_termsOfUseContentWrapper');
+            console.log(tcWrapper);
+            detach(tcWrapper);
             detach(document.querySelector('ul > li.CheckboxMultiSelect'));
           }, 1500);
 
