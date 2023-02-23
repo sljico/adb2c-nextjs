@@ -300,7 +300,7 @@ export default function LoginLayout({ children }: any): any {
             color: #323339;
           }
 
-          #attributeList > ul > li.TextBox {
+          #attributeList > ul > li.TextBox:first-child {
             border-bottom: 1px solid #909090;
             padding-bottom: 1.75rem;
           }
