@@ -294,6 +294,10 @@ export default function LoginLayout({ children }: any): any {
             outline: none;
           }
 
+          .CheckboxMultiSelect {
+            border-bottom: 1px solid #919191;
+          }
+
           .CheckboxMultiSelect > .attrEntry {
             display: flex;
             flex-direction: row-reverse;
