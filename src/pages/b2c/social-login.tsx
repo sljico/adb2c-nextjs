@@ -56,12 +56,13 @@ const SocialLogin: NextPage<unknown> = () => {
 
       <Script id="social-login-script" strategy="beforeInteractive">
         {`
+          console.log('social-login-script');
           setTimeout(() => {
             const tcWrapper = document.getElementById('extension_termsOfUseContentWrapper');
             console.log(tcWrapper);
             detach(tcWrapper);
             detach(document.querySelector('ul > li.CheckboxMultiSelect'));
-          }, 1500);
+          }, 3000);
 
           function detach(el) {
             return el?.parentNode.removeChild(el);
