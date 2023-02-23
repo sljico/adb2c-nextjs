@@ -254,6 +254,7 @@ export default function LoginLayout({ children }: any): any {
             margin: 35px 0;
           }
 
+          extension_termsOfUseContentWrapper + p,
           #extension_termsOfUseContentWrapper p {
             margin: 0;
             padding-bottom: 35px;
@@ -262,6 +263,10 @@ export default function LoginLayout({ children }: any): any {
             font-weight: 700;
             font-size: 28px;
             color: #333;
+          }
+
+          #extension_termsOfUseContentWrapper p {
+            border: none;
           }
 
           #api ul {
