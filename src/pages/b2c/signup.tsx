@@ -34,7 +34,22 @@ export default function Login() {
           </li>
         </div>
       </LoginLayout>
-      <Script id="signup-script" strategy="lazyOnload">
+      <Script
+        id="signup-script"
+        strategy="lazyOnload"
+        onLoad={() => {
+          let tc = document.getElementById(
+            "extension_termsOfUseContentWrapper"
+          );
+          console.log("onLoad ", tc);
+        }}
+        onReady={() => {
+          let tc = document.getElementById(
+            "extension_termsOfUseContentWrapper"
+          );
+          console.log("onReady ", tc);
+        }}
+      >
         {`
           console.log('dada');
           (function () {
