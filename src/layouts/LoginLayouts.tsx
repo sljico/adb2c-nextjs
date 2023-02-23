@@ -48,7 +48,7 @@ export default function LoginLayout({ children }: any): any {
 
           .card-body {
             flex: 1 1 auto;
-            padding: 5px;
+            padding: 0 20px;
           }
 
           .intro > p,
@@ -61,10 +61,6 @@ export default function LoginLayout({ children }: any): any {
             font-size: 1.15rem;
             color: #323339;
             margin: 0;
-          }
-
-          .carescoutB2cLayout {
-            padding: 0 20px;
           }
 
           #api button {
@@ -99,7 +95,7 @@ export default function LoginLayout({ children }: any): any {
           }
 
           #api .options button {
-            font-weight: 400;
+            // font-weight: 400;
             // color: #323339;
             // background-color: #fff;
           }
