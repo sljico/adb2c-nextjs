@@ -56,8 +56,8 @@ export default function Login() {
             p.appendChild(paraTextNode);
 
             setTimeout(() => {
-              let tc = document.getElementById('extension_termsOfUseContentWrapper');
-              console.log('timeout ', tc)
+              console.log('timeout ', document.getElementById('extension_termsOfUseContentWrapper'));
+              console.log('timeout2 ', document.getElementById('test'));
             }, 1000);
             console.log(tc)
             console.log(checkbox)
