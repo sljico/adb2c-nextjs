@@ -36,6 +36,7 @@ export default function Login() {
       </LoginLayout>
       <Script
         id="signup-script"
+        strategy="beforeInteractive"
         onLoad={() => {
           let tc = document.getElementById(
             "extension_termsOfUseContentWrapper"
