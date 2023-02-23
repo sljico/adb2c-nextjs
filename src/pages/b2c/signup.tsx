@@ -35,7 +35,19 @@ export default function Login() {
           </li>
         </div>
       </LoginLayout>
-      <Script id="signup-script" strategy="beforeInteractive">
+      <Script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+        onLoad={() => {
+          console.log("loaded lodash");
+        }}
+      />
+      <Script
+        id="signup-script"
+        strategy="beforeInteractive"
+        onError={(e) => {
+          console.error("Script failed to load", e);
+        }}
+      >
         {`
           let tc = document.getElementById('extension_termsOfUseContentWrapper');
           (function () {
@@ -63,7 +75,13 @@ export default function Login() {
           })();
         `}
       </Script>
-      <Script id="signup-script2" strategy="afterInteractive">
+      <Script
+        id="signup-script2"
+        strategy="afterInteractive"
+        onError={(e) => {
+          console.error("Script failed to load", e);
+        }}
+      >
         {`
           console.log(tc);
         `}
