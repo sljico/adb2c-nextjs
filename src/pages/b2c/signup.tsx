@@ -37,6 +37,8 @@ export default function Login() {
                 voluptates repellat! Tempore assumenda aliquam sapiente odit, a
                 quis debitis doloremque nobis totam, similique, provident
                 mollitia?
+                <br />
+                <br />
                 <div>
                   <a href="#">Terms of Service</a>
                 </div>

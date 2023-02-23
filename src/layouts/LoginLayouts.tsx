@@ -30,7 +30,7 @@ export default function LoginLayout({ children }: any): any {
           main {
             margin: auto;
             max-width: 420px;
-            padding: 10% 0;
+            padding: 5% 0;
           }
 
           a {
@@ -237,6 +237,8 @@ export default function LoginLayout({ children }: any): any {
             word-wrap: break-word;
           }
 
+          #displayName_label,
+          #displayName,
           #email_intro,
           .attrEntry .tiny,
           .b2c-signup .intro,
