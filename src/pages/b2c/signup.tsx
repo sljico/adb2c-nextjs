@@ -45,11 +45,11 @@ export default function Login() {
             
 
             setTimeout(() => {
-              const test = document.getElementById('test');
+              const test = document.getElementById('extension_termsOfUseContentWrapper');
               const checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
               console.log('timeout ', test, checkbox)
               detach(test);
-            }, 2000);
+            }, 1500);
             console.log(tc)
             console.log(checkbox)
 
