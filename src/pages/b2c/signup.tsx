@@ -36,27 +36,18 @@ export default function Login() {
         </div>
       </LoginLayout>
       <Script id="signup-script" strategy="beforeInteractive">
-        {`
-            let tc = document.getElementById('extension_termsOfUseContentWrapper');
-            let checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
-            let p = document.createElement('p');
-            let paraTextNode = document.createTextNode('HIPPA Authroization');
-            p.appendChild(paraTextNode);
-            
-
+        {`  
             setTimeout(() => {
               const test = document.getElementById('extension_termsOfUseContentWrapper');
               const checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
+              const p = document.createElement('p');
+              const paraTextNode = document.createTextNode('HIPPA Authroization');
+              p.appendChild(paraTextNode);
               console.log('timeout ', test, checkbox)
               detach(test);
               insertBefore(test, checkbox);
+              insertBefore(p, checkbox);
             }, 1500);
-            console.log(tc)
-            console.log(checkbox)
-
-            // detach(tc);
-            // insertBefore(tc, checkbox);
-            // insertBefore(p, checkbox);
 
             function detach(el) {
               return el?.parentNode.removeChild(el);
