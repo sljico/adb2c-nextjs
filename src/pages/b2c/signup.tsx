@@ -8,7 +8,6 @@ export default function Login() {
     <>
       <Head>
         <title>test</title>
-        <script>console.log('dasdasd');</script>
       </Head>
       <LoginLayout>
         <div className="carescoutB2cLayout">
