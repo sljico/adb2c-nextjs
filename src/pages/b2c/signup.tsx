@@ -36,7 +36,6 @@ export default function Login() {
       </LoginLayout>
       <Script
         id="signup-script"
-        strategy="lazyOnload"
         onLoad={() => {
           let tc = document.getElementById(
             "extension_termsOfUseContentWrapper"
