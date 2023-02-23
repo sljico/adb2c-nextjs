@@ -182,7 +182,7 @@ export default function LoginLayout({ children }: any): any {
           }
 
           .verifyInput {
-            margin-bottom: 22px;
+            margin-bottom: 22px !important;
           }
 
           #forgotPassword {
@@ -190,6 +190,7 @@ export default function LoginLayout({ children }: any): any {
             font-size: 0.8rem;
           }
 
+          .error,
           .error > p {
             color: #f44336;
             font-size: 0.8rem;
