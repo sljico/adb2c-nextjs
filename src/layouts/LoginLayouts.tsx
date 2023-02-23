@@ -324,6 +324,7 @@ export default function LoginLayout({ children }: any): any {
 
           input[type="checkbox"] + label {
             flex: 1 1 auto;
+            color: #333;
           }
 
           #api #emailVerificationControl_but_verify_code,
