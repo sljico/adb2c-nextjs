@@ -194,8 +194,8 @@ export default function LoginLayout({ children }: any): any {
 
           .buttons {
             margin-top: 1.5rem;
-            display: flex;
-            justify-content: space-between;
+            // display: flex;
+            // justify-content: space-between;
           }
 
           .buttons .verifyButton + .sendButton {
