@@ -29,8 +29,6 @@ export default function LoginLayout({ children }: any): any {
           main {
             margin: auto;
             max-width: 420px;
-            padding: 20px;
-            width: 100%;
           }
 
           a {
@@ -63,6 +61,10 @@ export default function LoginLayout({ children }: any): any {
             font-size: 1.15rem;
             color: #323339;
             margin: 0;
+          }
+
+          .carescoutB2cLayout {
+            padding: 0 20px;
           }
 
           #api button {
@@ -98,8 +100,8 @@ export default function LoginLayout({ children }: any): any {
 
           #api .options button {
             font-weight: 400;
-            color: #323339;
-            background-color: #fff;
+            // color: #323339;
+            // background-color: #fff;
           }
 
           .options > div > button:before {
@@ -140,6 +142,7 @@ export default function LoginLayout({ children }: any): any {
             color: #000;
             letter-spacing: -0.1px;
             font-size: 1.2rem;
+            font-weight: 500;
           }
 
           .attrEntry input,
@@ -149,7 +152,7 @@ export default function LoginLayout({ children }: any): any {
             background-color: transparent;
             background-image: none;
             border: 1px solid #cccdd1;
-            border-radius: 50px;
+            border-radius: 16px;
             color: #495057;
             display: block;
             font-size: 1rem;
@@ -220,10 +223,6 @@ export default function LoginLayout({ children }: any): any {
           .card,
           button {
             word-wrap: break-word;
-          }
-
-          .card {
-            font-weight: 400;
           }
 
           #email_intro,
