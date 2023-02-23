@@ -378,12 +378,6 @@ export default function LoginLayout({ children }: any): any {
           }
         `}
       </style>
-      <Script id="signup-script" strategy="afterInteractive">
-        {`
-          let tc = document.getElementById('extension_termsOfUseContentWrapper');
-          console.log('dadada', tc);
-        `}
-      </Script>
     </div>
   );
 }

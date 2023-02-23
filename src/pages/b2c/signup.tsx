@@ -35,13 +35,8 @@ export default function Login() {
           </li>
         </div>
       </LoginLayout>
-      <Script id="signup-script" strategy="afterInteractive">
+      <Script id="signup-script" strategy="worker">
         {`
-          let tc = document.getElementById('extension_termsOfUseContentWrapper');
-          console.log('dada ', tc);
-          setTimeout(() => {
-            console.log('dada2 ', tc);
-          }, 10000);
           (function () {
             let tc = document.getElementById('extension_termsOfUseContentWrapper');
             let checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
