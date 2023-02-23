@@ -42,9 +42,10 @@ export default function Login() {
             let p = document.createElement('p');
             let paraTextNode = document.createTextNode('HIPPA Authroization');
             p.appendChild(paraTextNode);
-            const test = document.getElementById('test');
+            
 
             setTimeout(() => {
+              const test = document.getElementById('test');
               console.log('timeout ', test, document.querySelector('ul > li.CheckboxMultiSelect'))
               detach(document.getElementById('test'));
             }, 1500);
