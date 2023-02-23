@@ -6,7 +6,9 @@ export { getServerSideProps } from "./login";
 export default function Login() {
   return (
     <>
-      <Head></Head>
+      <Head>
+        <script>console.log('test');</script>
+      </Head>
       <Script id="test">console.log('dasdasdasdasd')</Script>
       <Script
         src="https://connect.facebook.net/en_US/sdk.js"
