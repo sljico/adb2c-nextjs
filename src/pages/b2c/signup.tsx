@@ -48,8 +48,8 @@ export default function Login() {
               const test = document.getElementById('test');
               const checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
               console.log('timeout ', test, checkbox)
-              detach(document.getElementById('test'));
-            }, 1500);
+              detach(test);
+            }, 2000);
             console.log(tc)
             console.log(checkbox)
 
