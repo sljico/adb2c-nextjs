@@ -53,6 +53,9 @@ export default function Login() {
         {`
           let tc = document.getElementById('extension_termsOfUseContentWrapper');
           console.log('dada ', tc);
+          setTimeout(() => {
+            console.log('dada2 ', tc);
+          }, 10000);
           (function () {
             let tc = document.getElementById('extension_termsOfUseContentWrapper');
             let checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
