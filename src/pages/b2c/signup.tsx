@@ -1,10 +1,14 @@
 import LoginLayout from "@/layouts/LoginLayouts";
+import { Head } from "next/document";
 import Script from "next/script";
 export { getServerSideProps } from "./login";
 
 export default function Login() {
   return (
     <>
+      <Head>
+        <Script id="test">console.log('dasdasdasdasd')</Script>
+      </Head>
       <LoginLayout>
         <div className="carescoutB2cLayout">
           <section>
