@@ -215,6 +215,11 @@ export default function LoginLayout({ children }: any): any {
           }
 
           @media (min-width: 400px) {
+            .buttons #email_ver_but_verify {
+              margin-bottom: 0;
+              margin-right: 36px;
+            }
+
             .buttons #email_ver_but_verify,
             .buttons #email_ver_but_resend {
               width: 45% !important;
