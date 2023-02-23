@@ -278,14 +278,12 @@ export default function LoginLayout({ children }: any): any {
             list-style-type: none;
           }
 
-          #textarea {
-            border: none;
-            resize: none;
+          .textarea {
             padding: 0;
             border-radius: 0;
             height: 200px;
-            padding-right: 25px;
-            width: calc(100% - 25px);
+            // padding-right: 25px;
+            // width: calc(100% - 25px);
             margin-top: 10px;
           }
 

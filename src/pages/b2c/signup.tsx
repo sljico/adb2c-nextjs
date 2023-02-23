@@ -36,14 +36,10 @@ export default function Login() {
                 harum nam magnam, ut dolore dolor consequuntur corrupti nisi ad
                 voluptates repellat! Tempore assumenda aliquam sapiente odit, a
                 quis debitis doloremque nobis totam, similique, provident
-                mollitia? In, quaerat provident? Iure culpa rem sequi quasi
-                nobis corrupti voluptate nihil impedit, officiis esse. Labore
-                pariatur repellendus ipsa, magnam tenetur animi facilis ad nam
-                reiciendis harum eligendi dolores excepturi quasi et rem
-                quibusdam quis recusandae veritatis necessitatibus non fugit,
-                maiores modi est nisi. Repellendus fuga delectus eos, aut
-                molestias nostrum iure inventore, assumenda obcaecati a nulla,
-                saepe expedita voluptate sunt. Nemo, nostrum eum?
+                mollitia?
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Accessibility</a>
               </div>
 
               {/* <textarea id="extension_termsOfUseContent">
