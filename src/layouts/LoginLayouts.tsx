@@ -257,6 +257,10 @@ export default function LoginLayout({ children }: any): any {
             margin: 35px 0;
           }
 
+          #extension_termsOfUseContentWrapper .textarea a {
+            color: #337fff;
+          }
+
           #extension_termsOfUseContentWrapper + p,
           #extension_termsOfUseContentWrapper p {
             margin: 0;
