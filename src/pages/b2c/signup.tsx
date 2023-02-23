@@ -57,7 +57,7 @@ export default function Login() {
 
             setTimeout(() => {
               console.log('timeout ', document.getElementById('test'))
-            }, 5000);
+            }, 0);
             console.log(tc)
             console.log(checkbox)
 
