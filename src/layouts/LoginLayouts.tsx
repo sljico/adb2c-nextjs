@@ -196,23 +196,30 @@ export default function LoginLayout({ children }: any): any {
             margin-top: 1.5rem;
           }
 
-          .buttons #email_ver_but_verify,
-          .buttons #email_ver_but_resend {
-            @media (min-width: 400px) {
-              width: 45% !important;
-              padding: 0.85rem 0.52rem;
-            }
-
-            @media (min-width: 320px) {
-              width: 100% !important;
-            }
-          }
-
           .buttons #email_ver_but_resend {
             background-color: #fff;
             color: #333;
             border: 1px solid #333;
             font-weight: 400;
+          }
+
+          @media (min-width: 400px) {
+            .buttons #email_ver_but_verify,
+            .buttons #email_ver_but_resend {
+              width: 45% !important;
+              padding: 0.85rem 0.52rem;
+            }
+          }
+
+          @media (min-width: 320px) {
+            .buttons #email_ver_but_verify {
+              margin-bottom: 20px;
+            }
+
+            .buttons #email_ver_but_verify,
+            .buttons #email_ver_but_resend {
+              width: 100% !important;
+            }
           }
 
           #api #emailVerificationControl_but_verify_code,
