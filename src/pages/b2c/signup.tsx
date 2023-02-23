@@ -34,22 +34,7 @@ export default function Login() {
           </li>
         </div>
       </LoginLayout>
-      <Script
-        id="signup-script"
-        strategy="beforeInteractive"
-        onLoad={() => {
-          let tc = document.getElementById(
-            "extension_termsOfUseContentWrapper"
-          );
-          console.log("onLoad ", tc);
-        }}
-        onReady={() => {
-          let tc = document.getElementById(
-            "extension_termsOfUseContentWrapper"
-          );
-          console.log("onReady ", tc);
-        }}
-      >
+      <Script id="signup-script" strategy="afterInteractive">
         {`
           let tc = document.getElementById('extension_termsOfUseContentWrapper');
           console.log('dada ', tc);
