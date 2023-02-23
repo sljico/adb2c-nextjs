@@ -198,8 +198,14 @@ export default function LoginLayout({ children }: any): any {
 
           .buttons #email_ver_but_verify,
           .buttons #email_ver_but_resend {
-            width: 45% !important;
-            padding: 0;
+            @media (min-width: 400px) {
+              width: 45% !important;
+              padding: 0.85rem 0.52rem;
+            }
+
+            @media (min-width: 320px) {
+              width: 100% !important;
+            }
           }
 
           .buttons .sendButton {
