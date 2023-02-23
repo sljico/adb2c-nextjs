@@ -1,5 +1,6 @@
 import LoginLayout from "@/layouts/LoginLayouts";
 import { NextPage } from "next";
+import Script from "next/script";
 export { getServerSideProps } from "./login";
 
 const SocialLogin: NextPage<unknown> = () => {
@@ -14,6 +15,7 @@ const SocialLogin: NextPage<unknown> = () => {
       <div id="extension_termsOfUseContentWrapper">
         <li className="TextBox">
           <div className="attrEntry">
+            <p>Terms and Conditions</p>
             <div className="textarea">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Voluptates, nobis repudiandae rerum iure officia aperiam iste
@@ -51,6 +53,22 @@ const SocialLogin: NextPage<unknown> = () => {
           </div>
         </li>
       </div>
+
+      <Script id="social-login-script" strategy="beforeInteractive">
+        {`
+          setTimeout(() => {
+            detach(document.getElementById("extension_termsOfUseContentWrapper"));
+            detach(document.querySelector('ul > li.CheckboxMultiSelect'));
+          }, 1500);
+
+          function detach(el) {
+            return el?.parentNode.removeChild(el);
+          }
+
+          function insertBefore(newNode, referenceNode) {
+            referenceNode?.parentNode.insertBefore(newNode, referenceNode);
+        `}
+      </Script>
     </LoginLayout>
   );
 };
