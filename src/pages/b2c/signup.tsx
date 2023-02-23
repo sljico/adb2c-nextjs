@@ -16,11 +16,37 @@ export default function Login() {
         <div id="extension_termsOfUseContentWrapper">
           <li className="TextBox">
             <div className="attrEntry">
-              <label htmlFor="extension_termsOfUseContent">
-                Terms and Conditions
-              </label>
+              <p>Terms and Conditions</p>
 
-              <textarea id="extension_termsOfUseContent">
+              <div className="textarea">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates, nobis repudiandae rerum iure officia aperiam iste
+                excepturi qui quia mollitia neque aspernatur veritatis. Corrupti
+                quia sequi nesciunt nobis accusamus, dolores, pariatur
+                similique, reiciendis accusantium commodi cum est dignissimos
+                adipisci ratione recusandae! Fugiat omnis veniam corporis
+                maiores corrupti! Quaerat, itaque excepturi velit quos quia
+                aliquam eum ab provident repudiandae asperiores voluptate ut
+                incidunt corporis natus. Totam minus voluptatum quod labore enim
+                eveniet optio ratione modi aperiam sunt saepe assumenda quidem
+                tempore maxime fuga tempora officiis, deleniti quaerat sapiente
+                vel. Doloribus dolorem accusantium perspiciatis commodi. Ea
+                excepturi placeat ipsa accusamus sequi autem ab soluta
+                distinctio. Placeat sequi omnis maiores nemo recusandae, debitis
+                harum nam magnam, ut dolore dolor consequuntur corrupti nisi ad
+                voluptates repellat! Tempore assumenda aliquam sapiente odit, a
+                quis debitis doloremque nobis totam, similique, provident
+                mollitia? In, quaerat provident? Iure culpa rem sequi quasi
+                nobis corrupti voluptate nihil impedit, officiis esse. Labore
+                pariatur repellendus ipsa, magnam tenetur animi facilis ad nam
+                reiciendis harum eligendi dolores excepturi quasi et rem
+                quibusdam quis recusandae veritatis necessitatibus non fugit,
+                maiores modi est nisi. Repellendus fuga delectus eos, aut
+                molestias nostrum iure inventore, assumenda obcaecati a nulla,
+                saepe expedita voluptate sunt. Nemo, nostrum eum?
+              </div>
+
+              {/* <textarea id="extension_termsOfUseContent">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
                 repellendus rerum odit, nam, voluptatibus voluptas fugit ut
                 quaerat repellat eum odio quia esse fugiat magni sapiente hic
@@ -55,7 +81,7 @@ export default function Login() {
                 praesentium reiciendis aut numquam non cumque animi soluta
                 quisquam odit modi esse facere, enim repellat asperiores
                 quibusdam illum obcaecati?
-              </textarea>
+              </textarea> */}
             </div>
           </li>
         </div>

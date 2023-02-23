@@ -278,7 +278,7 @@ export default function LoginLayout({ children }: any): any {
             list-style-type: none;
           }
 
-          #extension_termsOfUseContent {
+          #textarea {
             border: none;
             resize: none;
             padding: 0;
