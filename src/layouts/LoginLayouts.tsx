@@ -194,11 +194,10 @@ export default function LoginLayout({ children }: any): any {
 
           .buttons {
             margin-top: 1.5rem;
-            // display: flex;
-            // justify-content: space-between;
           }
 
-          .buttons #email_ver_but_verify {
+          .buttons #email_ver_but_verify,
+          .buttons #email_ver_but_resend {
             width: 45% !important;
             padding: 0;
           }
