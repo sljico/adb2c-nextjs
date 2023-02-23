@@ -270,6 +270,7 @@ export default function LoginLayout({ children }: any): any {
             border-radius: 0;
             height: 200px;
             padding-right: 25px;
+            width: calc(100% - 25px);
           }
 
           #extension_termsOfUseContent:focus-visible {
@@ -293,11 +294,15 @@ export default function LoginLayout({ children }: any): any {
           }
 
           #api #emailVerificationControl_but_verify_code,
-          #api .sendButton,
           #api .sendCode,
           #api #cancel {
             background-color: #fff;
             color: #323339;
+          }
+
+          #attributeList > ul > li.TextBox {
+            border-bottom: 1px solid #909090;
+            padding-bottom: 1.75rem;
           }
 
           #attributeList + .buttons {

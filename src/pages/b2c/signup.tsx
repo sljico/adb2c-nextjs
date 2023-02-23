@@ -43,6 +43,10 @@ export default function Login() {
             let paraTextNode = document.createTextNode('HIPPA Authroization');
             p.appendChild(paraTextNode);
 
+            console.log(tc)
+            console.log(checkbox)
+            console.log(checkbox[0])
+
             detach(tc);
             insertBefore(tc, checkbox);
             insertBefore(p, checkbox);
