@@ -306,6 +306,10 @@ export default function LoginLayout({ children }: any): any {
             justify-content: space-between;
           }
 
+          .CheckboxMultiSelect .error {
+            display: none;
+          }
+
           input[type="checkbox"] {
             width: initial !important;
             margin: 0;
