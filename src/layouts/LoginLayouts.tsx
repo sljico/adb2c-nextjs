@@ -203,14 +203,6 @@ export default function LoginLayout({ children }: any): any {
             font-weight: 400;
           }
 
-          @media (min-width: 400px) {
-            .buttons #email_ver_but_verify,
-            .buttons #email_ver_but_resend {
-              width: 45% !important;
-              padding: 0.85rem 0.52rem;
-            }
-          }
-
           @media (min-width: 320px) {
             .buttons #email_ver_but_verify {
               margin-bottom: 20px;
@@ -219,6 +211,14 @@ export default function LoginLayout({ children }: any): any {
             .buttons #email_ver_but_verify,
             .buttons #email_ver_but_resend {
               width: 100% !important;
+            }
+          }
+
+          @media (min-width: 400px) {
+            .buttons #email_ver_but_verify,
+            .buttons #email_ver_but_resend {
+              width: 45% !important;
+              padding: 0.85rem 0.52rem;
             }
           }
 
