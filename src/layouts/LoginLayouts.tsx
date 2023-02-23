@@ -110,7 +110,7 @@ export default function LoginLayout({ children }: any): any {
 
           .create,
           .localAccount {
-            border-top: 1px solid #e9ecef;
+            border-top: 1px solid #909090;
             margin-top: 1.5rem;
             padding-top: 1.5rem;
           }
