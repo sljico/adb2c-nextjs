@@ -6,6 +6,10 @@ export { getServerSideProps } from "./login";
 export default function Login() {
   return (
     <>
+      <Head>
+        <title>test</title>
+        <script>console.log('dasdasd');</script>
+      </Head>
       <LoginLayout>
         <div className="carescoutB2cLayout">
           <section>
