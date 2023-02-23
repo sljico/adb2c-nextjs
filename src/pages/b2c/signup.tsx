@@ -13,8 +13,8 @@ export default function Login() {
           </section>
         </div>
 
-        <div id="test">
-          <li id="extension_termsOfUseContentWrapper" className="TextBox">
+        <div id="extension_termsOfUseContentWrapper">
+          <li className="TextBox">
             <div className="attrEntry">
               <label htmlFor="extension_termsOfUseContent">
                 Terms and Conditions
@@ -46,7 +46,8 @@ export default function Login() {
 
             setTimeout(() => {
               const test = document.getElementById('test');
-              console.log('timeout ', test, document.querySelector('ul > li.CheckboxMultiSelect'))
+              const checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
+              console.log('timeout ', test, checkbox)
               detach(document.getElementById('test'));
             }, 1500);
             console.log(tc)
