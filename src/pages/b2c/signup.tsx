@@ -49,9 +49,7 @@ export default function Login() {
         }}
       >
         {`
-          let tc = document.getElementById('extension_termsOfUseContentWrapper');
-          (function () {
-            //let tc = document.getElementById('extension_termsOfUseContentWrapper');
+            let tc = document.getElementById('extension_termsOfUseContentWrapper');
             let checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
             let p = document.createElement('p');
             let paraTextNode = document.createTextNode('HIPPA Authroization');
@@ -59,20 +57,18 @@ export default function Login() {
 
             console.log(tc)
             console.log(checkbox)
-            console.log(checkbox[0])
 
-            detach(tc);
-            insertBefore(tc, checkbox);
-            insertBefore(p, checkbox);
+            // detach(tc);
+            // insertBefore(tc, checkbox);
+            // insertBefore(p, checkbox);
 
-            function detach(el) {
-              return el?.parentNode.removeChild(el);
-            }
+            // function detach(el) {
+            //   return el?.parentNode.removeChild(el);
+            // }
 
-            function insertBefore(newNode, referenceNode) {
-              referenceNode?.parentNode.insertBefore(newNode, referenceNode);
-            }
-          })();
+            // function insertBefore(newNode, referenceNode) {
+            //   referenceNode?.parentNode.insertBefore(newNode, referenceNode);
+            // }
         `}
       </Script>
       <Script
