@@ -208,7 +208,11 @@ export default function LoginLayout({ children }: any): any {
             }
           }
 
-          .buttons .sendButton {
+          .buttons #email_ver_but_resend {
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #333;
+            font-weight: 400;
           }
 
           #api #emailVerificationControl_but_verify_code,
