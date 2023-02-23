@@ -35,10 +35,11 @@ export default function Login() {
           </li>
         </div>
       </LoginLayout>
-      <Script id="signup-script" strategy="worker">
+      <Script id="signup-script" strategy="beforeInteractive">
         {`
+          let tc = document.getElementById('extension_termsOfUseContentWrapper');
           (function () {
-            let tc = document.getElementById('extension_termsOfUseContentWrapper');
+            //let tc = document.getElementById('extension_termsOfUseContentWrapper');
             let checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
             let p = document.createElement('p');
             let paraTextNode = document.createTextNode('HIPPA Authroization');
@@ -60,6 +61,11 @@ export default function Login() {
               referenceNode?.parentNode.insertBefore(newNode, referenceNode);
             }
           })();
+        `}
+      </Script>
+      <Script id="signup-script2" strategy="afterInteractive">
+        {`
+          console.log(tc);
         `}
       </Script>
     </>
