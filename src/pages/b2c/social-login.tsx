@@ -54,7 +54,7 @@ const SocialLogin: NextPage<unknown> = () => {
         </li>
       </div>
 
-      <Script id="social-login-script" strategy="beforeInteractive">
+      <Script id="social-login-script">
         {`
           console.log('social-login-script');
           setTimeout(() => {
