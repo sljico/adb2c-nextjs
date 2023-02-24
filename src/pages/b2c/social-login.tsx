@@ -54,15 +54,47 @@ const SocialLogin: NextPage<unknown> = () => {
         </li>
       </div>
 
-      <Script id="social-login-script">
+      <Script id="social-login-script" strategy="beforeInteractive">
         {`
           console.log('social-login-script');
-          setTimeout(() => {
-            const tcWrapper = document.getElementById('extension_termsOfUseContentWrapper');
-            console.log(tcWrapper);
-            detach(tcWrapper);
-            detach(document.querySelector('ul > li.CheckboxMultiSelect'));
-          }, 3000);
+          // setTimeout(() => {
+          //   const tcWrapper = document.getElementById('extension_termsOfUseContentWrapper');
+          //   console.log(tcWrapper);
+          //   detach(tcWrapper);
+          //   detach(document.querySelector('ul > li.CheckboxMultiSelect'));
+          // }, 3000);
+
+          waitForElm('#extension_termsOfUseContentWrapper').then((el) => {
+            console.log('Element is ready');
+            const checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
+            const p = document.createElement('p');
+            const paraTextNode = document.createTextNode('HIPPA authorization');
+            p.appendChild(paraTextNode);
+            
+            detach(el);
+            insertBefore(el, checkbox);
+            insertBefore(p, checkbox);
+          });
+
+          function waitForElm(selector) {
+            return new Promise(resolve => {
+                if (document.querySelector(selector)) {
+                    return resolve(document.querySelector(selector));
+                }
+        
+                const observer = new MutationObserver(mutations => {
+                    if (document.querySelector(selector)) {
+                        resolve(document.querySelector(selector));
+                        observer.disconnect();
+                    }
+                });
+        
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            });
+          }
 
           function detach(el) {
             return el?.parentNode.removeChild(el);
