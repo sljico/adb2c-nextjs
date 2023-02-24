@@ -98,6 +98,7 @@ export default function SocialLogin() {
 
        function insertBefore(newNode, referenceNode) {
          referenceNode?.parentNode.insertBefore(newNode, referenceNode);
+       }
      `}
       </Script>
     </>
