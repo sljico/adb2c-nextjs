@@ -70,6 +70,7 @@ export default function SocialLogin() {
         console.log(checkbox);
 
         detach(el);
+        forEach(checkbox, (item) => detach(item));
          
          
         //  insertBefore(el, checkbox);
