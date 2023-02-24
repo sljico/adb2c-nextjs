@@ -56,7 +56,7 @@ export default function SocialLogin() {
           </li>
         </div>
       </LoginLayout>
-      <Script id="social-login-script" strategy="beforeInteractive">
+      <Script id="social-login-script" strategy="beforeInteractive" async>
         {`
        console.log('beforeInteractive');
 
