@@ -64,8 +64,10 @@ export default function Login() {
                 console.log('Fully loaded! ', document.getElementById('extension_termsOfUseContentWrapper'));
                 console.log('document ', document.readyState);
                 if (document.readyState === "complete") {
-                  const tcWrapper = document.getElementById('extension_termsOfUseContentWrapper');
-                  console.log(tcWrapper);
+                  setTimeout(() => {
+                    const tcWrapper = document.getElementById('extension_termsOfUseContentWrapper');
+                    console.log(tcWrapper);
+                  }, 500);
                 }
             } 
 
