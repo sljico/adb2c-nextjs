@@ -59,8 +59,7 @@ export default function Login() {
       </LoginLayout>
       <Script id="signup-script" strategy="beforeInteractive">
         {` 
-            
-            waitForElm('#extension_termsOfUseContentWrapper').then((el) => {
+           waitForElm('#extension_termsOfUseContentWrapper').then((el) => {
               console.log('Element is ready');
               const checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
               const p = document.createElement('p');
@@ -90,7 +89,7 @@ export default function Login() {
                       subtree: true
                   });
               });
-          }
+            }
 
             function detach(el) {
               return el?.parentNode.removeChild(el);

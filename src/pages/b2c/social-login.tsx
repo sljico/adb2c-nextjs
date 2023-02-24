@@ -12,7 +12,7 @@ const SocialLogin: NextPage<unknown> = () => {
         </section>
       </div>
 
-      <div id="extension_termsOfUseContentWrapper">
+      <div id="extension_termsOfUseContentWrapper" className="testKlasa">
         <li className="TextBox">
           <div className="attrEntry">
             <p>Terms and Conditions</p>
