@@ -304,6 +304,7 @@ export default function LoginLayout({ children }: any): any {
           .CheckboxMultiSelect {
             border-bottom: 1px solid #919191;
             padding-bottom: 10px;
+            list-style-type: none;
           }
 
           .CheckboxMultiSelect > .attrEntry {
