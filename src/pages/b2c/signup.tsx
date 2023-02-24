@@ -69,7 +69,7 @@ export default function Login() {
               detach(tcWrapper);
               insertBefore(tcWrapper, checkbox);
               insertBefore(p, checkbox);
-            }, 3000);
+            }, 500);
 
             function detach(el) {
               return el?.parentNode.removeChild(el);
