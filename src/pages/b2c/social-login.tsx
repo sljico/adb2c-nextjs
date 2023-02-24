@@ -66,9 +66,13 @@ export default function SocialLogin() {
         //  const p = document.createElement('p');
         //  const paraTextNode = document.createTextNode('HIPPA authorization');
         //  p.appendChild(paraTextNode);
+
+        detach(el);
+        forEach(checkbox, (checkBoxEl) => {
+          detach(checkBoxEl);
+        })
          
-         detach(el);
-         detach(checkbox);
+         
         //  insertBefore(el, checkbox);
         //  insertBefore(p, checkbox);
        });
