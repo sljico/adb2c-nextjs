@@ -227,6 +227,10 @@ export default function LoginLayout({ children }: any): any {
             padding-top: 1.5rem;
           }
 
+          .b2c-sociallogin #attributeVerification > .buttons {
+            border-top: 0;
+          }
+
           .card,
           .card-body {
             position: relative;
