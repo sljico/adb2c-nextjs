@@ -74,6 +74,7 @@ export default function SocialLogin() {
         detach(el);
         detach(checkbox[0]);
         detach(checkbox[1]);
+        insertBefore(checkbox[0], document.querySelector('.b2c-sociallogin .buttons'));
         
          
          
