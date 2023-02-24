@@ -68,9 +68,11 @@ export default function SocialLogin() {
          p.appendChild(paraTextNode);
 
         console.log(checkbox);
+        console.log(checkbox[0]);
+        console.log(checkbox[1]);
 
         detach(el);
-        forEach(checkbox, (item) => detach(item));
+        
          
          
         //  insertBefore(el, checkbox);
