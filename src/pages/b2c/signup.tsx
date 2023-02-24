@@ -59,6 +59,7 @@ export default function Login() {
       </LoginLayout>
       <Script id="signup-script" strategy="beforeInteractive">
         {` 
+            console.log('document ', document);
             document.addEventListener("DOMContentLoaded", function testDom() {
               console.log("DOM content loaded");
             });
