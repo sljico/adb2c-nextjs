@@ -61,7 +61,8 @@ export default function Login() {
         {` 
             if(document.readyState === "complete") {
                 // Fully loaded!
-                console.log('Fully loaded!')
+                console.log('Fully loaded! ', document.getElementById('extension_termsOfUseContentWrapper'));
+                console.log('document ', document.readyState);
             } else if(document.readyState === "interactive") {
                 // DOM ready! Images, frames, and other subresources are still downloading.
                 console.log('DOM ready! Images, frames, and other subresources are still downloading.')
@@ -80,7 +81,7 @@ export default function Login() {
                     console.log('load');
                 });
             }
-            console.log('document ', document);
+
             document.addEventListener("DOMContentLoaded", function testDom() {
               console.log("DOM content loaded");
             });
