@@ -72,6 +72,8 @@ export default function SocialLogin() {
         console.log(checkbox[1]);
 
         detach(el);
+        detach(checkbox[0]);
+        detach(checkbox[1]);
         
          
          
