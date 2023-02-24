@@ -59,6 +59,10 @@ export default function Login() {
       </LoginLayout>
       <Script id="signup-script" strategy="beforeInteractive">
         {` 
+            document.addEventListener("DOMContentLoaded", function testDom() {
+              console.log("DOM content loaded");
+            });
+
             setTimeout(() => {
               const tcWrapper = document.getElementById('extension_termsOfUseContentWrapper');
               const checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
