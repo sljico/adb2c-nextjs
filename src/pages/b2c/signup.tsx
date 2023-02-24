@@ -57,34 +57,17 @@ export default function Login() {
           </li>
         </div>
       </LoginLayout>
-      <Script id="signup-script" strategy="lazyOnload">
+      <Script id="signup-script" strategy="beforeInteractive">
         {` 
             if(document.readyState === "complete") {
                 // Fully loaded!
                 console.log('Fully loaded! ', document.getElementById('extension_termsOfUseContentWrapper'));
                 console.log('document ', document.readyState);
-            } else if(document.readyState === "interactive") {
-                // DOM ready! Images, frames, and other subresources are still downloading.
-                console.log('DOM ready! Images, frames, and other subresources are still downloading.')
-            } else {
-                // Loading still in progress.
-                // To wait for it to complete, add "DOMContentLoaded" or "load" listeners.
-                console.log('Loading still in progress. To wait for it to complete, add "DOMContentLoaded" or "load" listeners.');
-            
-                window.addEventListener("DOMContentLoaded", () => {
-                    // DOM ready! Images, frames, and other subresources are still downloading.
-                    console.log('DOMContentLoaded');
-                });
-            
-                window.addEventListener("load", () => {
-                    // Fully loaded!
-                    console.log('load');
-                });
-            }
-
-            document.addEventListener("DOMContentLoaded", function testDom() {
-              console.log("DOM content loaded");
-            });
+                if (document.readyState === "complete") {
+                  const tcWrapper = document.getElementById('extension_termsOfUseContentWrapper');
+                  console.log(tcWrapper);
+                }
+            } 
 
             setTimeout(() => {
               const tcWrapper = document.getElementById('extension_termsOfUseContentWrapper');
