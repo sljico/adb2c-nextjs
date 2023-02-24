@@ -54,9 +54,17 @@ const SocialLogin: NextPage<unknown> = () => {
         </li>
       </div>
 
+      <Script id="social-login-script" strategy="afterInteractive">
+        {`console.log('afterInteractive');`}
+      </Script>
+
+      <Script id="social-login-script" strategy="lazyOnload">
+        {`console.log('lazyOnload');`}
+      </Script>
+
       <Script id="social-login-script" strategy="beforeInteractive">
         {`
-          console.log('social-login-script');
+          console.log('beforeInteractive');
           // setTimeout(() => {
           //   const tcWrapper = document.getElementById('extension_termsOfUseContentWrapper');
           //   console.log(tcWrapper);
