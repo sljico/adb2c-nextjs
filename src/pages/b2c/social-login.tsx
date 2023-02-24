@@ -3,7 +3,7 @@ import { NextPage } from "next";
 import Script from "next/script";
 export { getServerSideProps } from "./login";
 
-const SocialLogin: NextPage<unknown> = () => {
+export default function SocialLogin() {
   return (
     <>
       <LoginLayout>
@@ -102,6 +102,4 @@ const SocialLogin: NextPage<unknown> = () => {
       </Script>
     </>
   );
-};
-
-export default SocialLogin;
+}
