@@ -3,7 +3,7 @@ import { Head } from "next/document";
 import Script from "next/script";
 export { getServerSideProps } from "./login";
 
-export default function Login() {
+export default function Signup() {
   return (
     <>
       <LoginLayout>
