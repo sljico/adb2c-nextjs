@@ -59,34 +59,34 @@ export default function Login() {
       </LoginLayout>
       <Script id="signup-script" strategy="beforeInteractive">
         {` 
-            if(document.readyState === "complete") {
-                // Fully loaded!
-                console.log('Fully loaded! ', document.getElementById('extension_termsOfUseContentWrapper'));
-                console.log('document ', document.readyState);
-                if (document.readyState === "complete") {
-                  setTimeout(() => {
-                    const tcWrapper = document.getElementById('extension_termsOfUseContentWrapper');
-                    console.log(tcWrapper);
-                  }, 500);
-                }
-            } 
+            // if(document.readyState === "complete") {
+            //     // Fully loaded!
+            //     console.log('Fully loaded! ', document.getElementById('extension_termsOfUseContentWrapper'));
+            //     console.log('document ', document.readyState);
+            //     if (document.readyState === "complete") {
+            //       setTimeout(() => {
+            //         const tcWrapper = document.getElementById('extension_termsOfUseContentWrapper');
+            //         console.log(tcWrapper);
+            //       }, 500);
+            //     }
+            // } 
 
             waitForElm('#extension_termsOfUseContentWrapper').then((elm) => {
               console.log('Element is ready');
-              console.log(elm.textContent);
+              console.log(elm);
             });
 
-            setTimeout(() => {
-              const tcWrapper = document.getElementById('extension_termsOfUseContentWrapper');
-              const checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
-              const p = document.createElement('p');
-              const paraTextNode = document.createTextNode('HIPPA Authroization');
-              p.appendChild(paraTextNode);
+            // setTimeout(() => {
+            //   const tcWrapper = document.getElementById('extension_termsOfUseContentWrapper');
+            //   const checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
+            //   const p = document.createElement('p');
+            //   const paraTextNode = document.createTextNode('HIPPA Authroization');
+            //   p.appendChild(paraTextNode);
 
-              detach(tcWrapper);
-              insertBefore(tcWrapper, checkbox);
-              insertBefore(p, checkbox);
-            }, 500);
+            //   detach(tcWrapper);
+            //   insertBefore(tcWrapper, checkbox);
+            //   insertBefore(p, checkbox);
+            // }, 500);
 
             function waitForElm(selector) {
               return new Promise(resolve => {
