@@ -62,7 +62,8 @@ export default function Login() {
             
             waitForElm('#extension_termsOfUseContentWrapper').then((el) => {
               console.log('Element is ready');
-              console.log(el);
+              const checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
+              console.log(checkbox);
               detach(el);
             });
 
