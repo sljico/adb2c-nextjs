@@ -63,14 +63,13 @@ export default function SocialLogin() {
        waitForElm('#extension_termsOfUseContentWrapper').then((el) => {
          console.log('Element is ready');
          const checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
-        //  const p = document.createElement('p');
-        //  const paraTextNode = document.createTextNode('HIPPA authorization');
-        //  p.appendChild(paraTextNode);
+         const p = document.createElement('p');
+         const paraTextNode = document.createTextNode('HIPPA authorization');
+         p.appendChild(paraTextNode);
+
+        console.log(checkbox);
 
         detach(el);
-        forEach(checkbox, (checkBoxEl) => {
-          detach(checkBoxEl);
-        })
          
          
         //  insertBefore(el, checkbox);
