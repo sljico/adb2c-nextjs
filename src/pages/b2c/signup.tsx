@@ -71,6 +71,11 @@ export default function Login() {
                 }
             } 
 
+            waitForElm('#extension_termsOfUseContentWrapper').then((elm) => {
+              console.log('Element is ready');
+              console.log(elm.textContent);
+            });
+
             setTimeout(() => {
               const tcWrapper = document.getElementById('extension_termsOfUseContentWrapper');
               const checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
@@ -82,6 +87,26 @@ export default function Login() {
               insertBefore(tcWrapper, checkbox);
               insertBefore(p, checkbox);
             }, 500);
+
+            function waitForElm(selector) {
+              return new Promise(resolve => {
+                  if (document.querySelector(selector)) {
+                      return resolve(document.querySelector(selector));
+                  }
+          
+                  const observer = new MutationObserver(mutations => {
+                      if (document.querySelector(selector)) {
+                          resolve(document.querySelector(selector));
+                          observer.disconnect();
+                      }
+                  });
+          
+                  observer.observe(document.body, {
+                      childList: true,
+                      subtree: true
+                  });
+              });
+          }
 
             function detach(el) {
               return el?.parentNode.removeChild(el);
