@@ -102,10 +102,10 @@ const Signup: NextPage<unknown> = () => {
       </LoginLayout>
       <Script id="signup-script" strategy="beforeInteractive">
         {`
-          waitForElm('#extension_termsOfUseContentWrapper').then((el) => {
-            const checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
-            const p = document.createElement('p');  
-            const paraTextNode = document.createTextNode('HIPPA authorization');
+          waitForElm(&#x27#extension_termsOfUseContentWrapper&#x27).then((el) => {
+            const checkbox = document.querySelector(&#x27ul > li.CheckboxMultiSelect&#x27);
+            const p = document.createElement(&#x27p&#x27);  
+            const paraTextNode = document.createTextNode(&#x27HIPPA authorization&#x27);
             p.appendChild(paraTextNode);
 
             detach(el);
