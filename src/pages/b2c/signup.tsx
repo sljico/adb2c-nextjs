@@ -100,47 +100,7 @@ const Signup: NextPage<unknown> = () => {
           </li>
         </div>
       </LoginLayout>
-      <Script
-        type="text/javascript"
-        strategy="beforeInteractive"
-        id="test3"
-        dangerouslySetInnerHTML={{
-          __html: `
-        waitForElm('#extension_termsOfUseContentWrapper').then((el) => {
-          const checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
-          const p = document.createElement('p');  
-          const paraTextNode = document.createTextNode('HIPPA authorization');
-          p.appendChild(paraTextNode);
-
-          // detach(el);
-          // insertBefore(el, checkbox);
-          // insertBefore(p, checkbox);
-        });
-
-        function waitForElm(selector) {
-          return new Promise(resolve => {
-            if (document.querySelector(selector)) {
-              return resolve(document.querySelector(selector))
-            }
-
-            const observer = new MutationObserver(mutations => {
-              if (document.querySelector(selector)) {
-                resolve (document.querySelector(selector));
-                observer.disconnect();
-              }
-            });
-
-            observer.observe(document.body, {
-              childList: true,
-              subtree: true
-            })
-          });
-        }
-      
-      `,
-        }}
-      />
-      {/* <Script id="signup-script">
+      <script id="signup-script">
         {`
           waitForElm('#extension_termsOfUseContentWrapper').then((el) => {
             const checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
@@ -181,7 +141,7 @@ const Signup: NextPage<unknown> = () => {
             referenceNode?.parentNode.insertBefore(newNode, referenceNode);
           }
         `}
-      </Script> */}
+      </script>
     </>
   );
 };
