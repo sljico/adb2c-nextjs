@@ -9,7 +9,7 @@ const Signup: NextPage<unknown> = () => {
     <>
       <Head>
         {/* <script type="text/javascript" src="..."></script> */}
-        <script type="text/javascript" src="/js/test2.js"></script>
+        {/* <script type="text/javascript" src="/js/test2.js"></script> */}
       </Head>
       <LoginLayout>
         <div className="carescoutB2cLayout">
@@ -105,6 +105,8 @@ const Signup: NextPage<unknown> = () => {
           </li>
         </div>
       </LoginLayout>
+      {/* <script type="text/javascript" src="/js/test2.js"></script> */}
+      <Script type="text/javascript" src="/js/test2.js"></Script>
       {/* <script src="../../test.js"></script> */}
       {/* <Script id="signup-script" strategy="beforeInteractive">
         {`
