@@ -100,7 +100,7 @@ const Signup: NextPage<unknown> = () => {
           </li>
         </div>
       </LoginLayout>
-      <script id="signup-script">
+      <Script id="signup-script" strategy="beforeInteractive">
         {`
           console.log('da');
           waitForElm('#extension_termsOfUseContentWrapper').then((el) => {
@@ -142,7 +142,7 @@ const Signup: NextPage<unknown> = () => {
             referenceNode?.parentNode.insertBefore(newNode, referenceNode);
           }
         `}
-      </script>
+      </Script>
     </>
   );
 };
