@@ -138,7 +138,7 @@ const Signup: NextPage<unknown> = () => {
       `,
         }}
       />
-      <Script id="signup-script">
+      {/* <Script id="signup-script">
         {`
           waitForElm('#extension_termsOfUseContentWrapper').then((el) => {
             const checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
@@ -179,7 +179,7 @@ const Signup: NextPage<unknown> = () => {
             referenceNode?.parentNode.insertBefore(newNode, referenceNode);
           }
         `}
-      </Script>
+      </Script> */}
     </>
   );
 };
