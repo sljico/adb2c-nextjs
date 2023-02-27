@@ -1,3 +1,4 @@
+import LoginLayout from "@/layouts/LoginLayouts";
 import { GetServerSideProps, NextPage } from "next";
 import Script from "next/script";
 export { getServerSideProps } from "./login";
@@ -5,7 +6,7 @@ export { getServerSideProps } from "./login";
 const SocialLogin: NextPage<unknown> = () => {
   return (
     <>
-      <div>
+      <LoginLayout>
         <div className="carescoutB2cLayout">
           <section>
             <div id="api" className="b2c-sociallogin"></div>
@@ -98,7 +99,7 @@ const SocialLogin: NextPage<unknown> = () => {
             </div>
           </li>
         </div>
-      </div>
+      </LoginLayout>
       <Script id="social-login-script" strategy="beforeInteractive">
         {`
           waitForElm('#extension_termsOfUseContentWrapper').then((el) => {

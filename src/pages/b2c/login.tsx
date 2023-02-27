@@ -1,14 +1,15 @@
+import LoginLayout from "@/layouts/LoginLayouts";
 import { GetServerSideProps, NextPage } from "next";
 
 const Login: NextPage<unknown> = () => {
   return (
-    <div className={"b2cCustomWrapper"}>
+    <LoginLayout className={"b2cCustomWrapper"}>
       <div className="carescoutB2cLayout">
         <section>
           <div id="api" className="b2c-login"></div>
         </section>
       </div>
-    </div>
+    </LoginLayout>
   );
 };
 
