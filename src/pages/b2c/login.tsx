@@ -12,7 +12,7 @@ const Login: NextPage<unknown> = () => {
   );
 };
 
-const allowedOrigins = (process.env.ALLOWED_LOGIN_ORIGINS || "").split(",");
+const allowedOrigins = ["https://gworthpoc.b2clogin.com"];
 export const getServerSideProps: GetServerSideProps<{}> = async ({
   req,
   res,
