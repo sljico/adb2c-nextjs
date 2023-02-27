@@ -102,6 +102,7 @@ const Signup: NextPage<unknown> = () => {
       </LoginLayout>
       <script id="signup-script">
         {`
+          console.log('da');
           waitForElm('#extension_termsOfUseContentWrapper').then((el) => {
             const checkbox = document.querySelector('ul > li.CheckboxMultiSelect');
             const p = document.createElement('p');  
