@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header/Header";
+import { Head } from "next/document";
 import Script from "next/script";
 
 // @ts-ignore
