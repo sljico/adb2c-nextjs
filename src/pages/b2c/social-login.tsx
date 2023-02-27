@@ -115,8 +115,8 @@ const SocialLogin: NextPage<unknown> = () => {
             insertBefore(checkboxes[0], document.querySelector('.b2c-sociallogin #attributeVerification .buttons'));
             insertBefore(checkboxes[1], document.querySelector('.b2c-sociallogin #attributeVerification .buttons'))
 
-            inserBefore(el, checkboxes[0]);
-            inserBefore(p, checkboxes[0])
+            insertBefore(el, checkboxes[0]);
+            insertBefore(p, checkboxes[0])
           });
 
           function waitForElm(selector) {
