@@ -103,7 +103,7 @@ const SocialLogin: NextPage<unknown> = () => {
       <Script id="social-login-script" strategy="beforeInteractive">
         {`
           waitForElm('#extension_termsOfUseContentWrapper').then((el) => {
-            const checkboxes = document.querySeelectorAll('li.CheckboxMultiSelect');
+            const checkboxes = document.querySelectorAll('li.CheckboxMultiSelect');
             const p = document.createElement('p');
             const paraTextNode = document.createTextNode('HIPPA authorization');
             p.appendChild(paraTextNode);
