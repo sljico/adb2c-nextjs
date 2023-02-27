@@ -107,6 +107,7 @@ const Signup: NextPage<unknown> = () => {
       </LoginLayout>
       {/* <script type="text/javascript" src="/js/test2.js"></script> */}
       <Script
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: `
       console.log('da');
