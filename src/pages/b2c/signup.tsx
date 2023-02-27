@@ -106,7 +106,7 @@ const Signup: NextPage<unknown> = () => {
         </div>
       </LoginLayout>
       {/* <script type="text/javascript" src="/js/test2.js"></script> */}
-      <Script type="text/javascript" src="/js/test2.js"></Script>
+      <Script src="/js/test2.js" strategy="beforeInteractive"></Script>
       {/* <script src="../../test.js"></script> */}
       {/* <Script id="signup-script" strategy="beforeInteractive">
         {`
