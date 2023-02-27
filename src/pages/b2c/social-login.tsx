@@ -111,8 +111,9 @@ const SocialLogin: NextPage<unknown> = () => {
             detach(el);
             detach(checkboxes[0])
             detach(checkboxes[1])
-            insertBefore(checkboxes[0], document.querySelector('.b2c-sociallogin #attributeVerification .buttons')]);
-            insertBefore(checkboxes[1], document.querySelector('.b2c-sociallogin #attributeVerification .buttons')])
+            
+            insertBefore(checkboxes[0], document.querySelector('.b2c-sociallogin #attributeVerification .buttons'));
+            insertBefore(checkboxes[1], document.querySelector('.b2c-sociallogin #attributeVerification .buttons'))
 
             inserBefore(el, checkboxes[0]);
             inserBefore(p, checkboxes[0])
