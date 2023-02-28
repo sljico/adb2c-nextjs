@@ -110,7 +110,7 @@ const SocialLogin: NextPage<unknown> = () => {
             p.appendChild(paraTextNode);
 
             detach(el);
-            // detach(checkboxes[0])
+            detach(checkboxes[0])
             // detach(checkboxes[1])
             // detach(checkboxes[2])
             
