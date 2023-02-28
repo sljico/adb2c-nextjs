@@ -112,10 +112,13 @@ const Signup: NextPage<unknown> = () => {
           __html: `
       console.log('da');
       waitForElm('#extension_termsOfUseContentWrapper').then((el) => {
+        console.log('el', el);
         const checkbox = document.querySelector('.CheckboxMultiSelect');
+        console.log('checkbox', checkbox)
         const p = document.createElement('p');  
         const paraTextNode = document.createTextNode('HIPPA authorization');
         p.appendChild(paraTextNode);
+        console.log('p', p);
 
         detach(el);
         insertBefore(el, checkbox);
