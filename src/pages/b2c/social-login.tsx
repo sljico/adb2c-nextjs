@@ -100,7 +100,7 @@ const SocialLogin: NextPage<unknown> = () => {
           </li>
         </div>
       </LoginLayout>
-      <Script id="social-login-script" strategy="beforeInteractive">
+      {/* <Script id="social-login-script" strategy="beforeInteractive">
         {`
           waitForElm('#extension_termsOfUseContentWrapper').then((el) => {
             const checkboxes = document.querySelectorAll('li.CheckboxMultiSelect');
@@ -147,7 +147,7 @@ const SocialLogin: NextPage<unknown> = () => {
             referenceNode?.parentNode.insertBefore(newNode, referenceNode);
           }
         `}
-      </Script>
+      </Script> */}
     </>
   );
 };
