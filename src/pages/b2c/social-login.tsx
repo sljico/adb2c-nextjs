@@ -100,23 +100,24 @@ const SocialLogin: NextPage<unknown> = () => {
           </li>
         </div>
       </LoginLayout>
-      {/* <Script id="social-login-script" strategy="beforeInteractive">
+      <Script id="social-login-script" strategy="beforeInteractive">
         {`
           waitForElm('#extension_termsOfUseContentWrapper').then((el) => {
-            const checkboxes = document.querySelectorAll('li.CheckboxMultiSelect');
-            const p = document.createElement('p');
-            const paraTextNode = document.createTextNode('HIPPA authorization');
-            p.appendChild(paraTextNode);
+            console.log("Element ready");
+            // const checkboxes = document.querySelectorAll('li.CheckboxMultiSelect');
+            // const p = document.createElement('p');
+            // const paraTextNode = document.createTextNode('HIPPA authorization');
+            // p.appendChild(paraTextNode);
 
-            detach(el);
-            detach(checkboxes[0])
-            detach(checkboxes[1])
+            // detach(el);
+            // detach(checkboxes[0])
+            // detach(checkboxes[1])
             
-            insertBefore(checkboxes[0], document.querySelector('.b2c-sociallogin #attributeVerification .buttons'));
-            insertBefore(checkboxes[1], document.querySelector('.b2c-sociallogin #attributeVerification .buttons'))
+            // insertBefore(checkboxes[0], document.querySelector('.b2c-sociallogin #attributeVerification .buttons'));
+            // insertBefore(checkboxes[1], document.querySelector('.b2c-sociallogin #attributeVerification .buttons'))
 
-            insertBefore(el, checkboxes[0]);
-            insertBefore(p, checkboxes[0])
+            // insertBefore(el, checkboxes[0]);
+            // insertBefore(p, checkboxes[0])
           });
 
           function waitForElm(selector) {
@@ -147,7 +148,7 @@ const SocialLogin: NextPage<unknown> = () => {
             referenceNode?.parentNode.insertBefore(newNode, referenceNode);
           }
         `}
-      </Script> */}
+      </Script>
     </>
   );
 };
