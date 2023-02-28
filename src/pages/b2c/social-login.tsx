@@ -106,7 +106,7 @@ const SocialLogin: NextPage<unknown> = () => {
             console.log("Element ready");
             // const checkboxes = document.querySelectorAll('li.CheckboxMultiSelect');
             const p = document.createElement('p');
-            // const paraTextNode = document.createTextNode('HIPPA authorization');
+            const paraTextNode = document.createTextNode('HIPPA authorization');
             // p.appendChild(paraTextNode);
 
             // detach(el);
