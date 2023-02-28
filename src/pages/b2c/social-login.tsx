@@ -104,7 +104,7 @@ const SocialLogin: NextPage<unknown> = () => {
         {`
           waitForElm('#extension_termsOfUseContentWrapper').then((el) => {
             console.log("Element ready");
-            // const checkboxes = document.querySelectorAll('li.CheckboxMultiSelect');
+            const checkboxes = document.querySelectorAll('li.CheckboxMultiSelect');
             const p = document.createElement('p');
             const paraTextNode = document.createTextNode('HIPPA authorization');
             p.appendChild(paraTextNode);
