@@ -110,9 +110,9 @@ const SocialLogin: NextPage<unknown> = () => {
             p.appendChild(paraTextNode);
 
             detach(el);
-            detach(checkboxes[0])
-            detach(checkboxes[1])
-            detach(checkboxes[2])
+            // detach(checkboxes[0])
+            // detach(checkboxes[1])
+            // detach(checkboxes[2])
             
             // insertBefore(checkboxes[0], document.querySelector('.b2c-sociallogin #attributeVerification .buttons'));
             // insertBefore(checkboxes[1], document.querySelector('.b2c-sociallogin #attributeVerification .buttons'))
