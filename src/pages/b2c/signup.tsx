@@ -120,9 +120,9 @@ const Signup: NextPage<unknown> = () => {
         p.appendChild(paraTextNode);
         console.log('p', p);
 
-        detach(el);
-        insertBefore(el, checkbox);
-        insertBefore(p, checkbox);
+        // detach(el);
+        // insertBefore(el, checkbox);
+        // insertBefore(p, checkbox);
       });
 
       function waitForElm(selector) {
