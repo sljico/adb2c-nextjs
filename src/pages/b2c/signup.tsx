@@ -104,58 +104,9 @@ const Signup: NextPage<unknown> = () => {
             </div>
           </li>
         </div>
+        <p>HIPPA authorization</p>
       </LoginLayout>
       {/* <script type="text/javascript" src="/js/test2.js"></script> */}
-      <Script
-        strategy="beforeInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-      console.log('da');
-      waitForElm('#extension_termsOfUseContentWrapper').then(function(el) {
-        console.log('el', el);
-        const checkbox = document.querySelector('.CheckboxMultiSelect');
-        console.log('checkbox', checkbox)
-        const p = document.createElement('p');  
-        const paraTextNode = document.createTextNode('HIPPA authorization');
-        p.appendChild(paraTextNode);
-        console.log('p', p);
-
-        // detach(el);
-        // insertBefore(el, checkbox);
-        // insertBefore(p, checkbox);
-      });
-
-      function waitForElm(selector) {
-        return new Promise(function(resolve) {
-          if (document.querySelector(selector)) {
-            return resolve(document.querySelector(selector))
-          }
-
-          const observer = new MutationObserver(function(mutations) {
-            if (document.querySelector(selector)) {
-              resolve (document.querySelector(selector));
-              observer.disconnect();
-            }
-          });
-
-          observer.observe(document.body, {
-            childList: true,
-            subtree: true
-          })
-        });
-      }
-
-      function detach(el) {
-        return el?.parentNode.removeChild(el);
-      }
-
-      function insertBefore(newNode, referenceNode) {
-        referenceNode?.parentNode.insertBefore(newNode, referenceNode);
-      }
-      
-      `,
-        }}
-      />
       {/* <script src="../../test.js"></script> */}
       {/* <Script id="signup-script" strategy="beforeInteractive">
         {`
