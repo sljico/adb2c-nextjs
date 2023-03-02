@@ -314,13 +314,16 @@ export default function LoginLayout({ children }: any): any {
 
           .CheckboxMultiSelect > .attrEntry {
             display: flex;
+            flex-wrap: wrap;
             flex-direction: row-reverse;
             align-items: center;
             justify-content: space-between;
           }
 
           .CheckboxMultiSelect .error {
-            display: none;
+            order: 3;
+            text-align: left;
+            width: 100%;
           }
 
           input[type="checkbox"] {
