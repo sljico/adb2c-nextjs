@@ -348,7 +348,11 @@ export default function LoginLayout({ children }: any): any {
             padding-bottom: 1.75rem;
           }
 
-          #attributeList > ul > li:not(:first-child):not(:nth-child(2)) {
+          #attributeList
+            > ul
+            > li:not(:first-child):not(:nth-child(2)):not(
+              .CheckboxMultiSelect
+            ) {
             margin-top: 2.5rem;
           }
 
