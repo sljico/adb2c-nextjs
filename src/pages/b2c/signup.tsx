@@ -111,7 +111,7 @@ const Signup: NextPage<unknown> = () => {
         dangerouslySetInnerHTML={{
           __html: `
       console.log('da');
-      waitForElm('#extension_termsOfUseContentWrapper').then((el) => {
+      waitForElm('#extension_termsOfUseContentWrapper').then(function(el) {
         console.log('el', el);
         const checkbox = document.querySelector('.CheckboxMultiSelect');
         console.log('checkbox', checkbox)
@@ -126,12 +126,12 @@ const Signup: NextPage<unknown> = () => {
       });
 
       function waitForElm(selector) {
-        return new Promise(resolve => {
+        return new Promise(function(resolve) {
           if (document.querySelector(selector)) {
             return resolve(document.querySelector(selector))
           }
 
-          const observer = new MutationObserver(mutations => {
+          const observer = new MutationObserver(function(mutations) {
             if (document.querySelector(selector)) {
               resolve (document.querySelector(selector));
               observer.disconnect();
