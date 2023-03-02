@@ -156,14 +156,17 @@ export default function LoginLayout({ children }: any): any {
             display: block;
             font-size: 1rem;
             line-height: 1.5;
-            margin: 0 0 0.5rem;
             padding: 0.3rem 0 0.55rem;
             transition: border-color 0.15s ease-in-out,
               box-shadow 0.15s ease-in-out;
             width: 100% !important;
             padding: 1.1rem;
             max-height: 56px;
-            margin-top: 0.75rem;
+            margin-top: 1rem;
+          }
+
+          #requiredFieldMissing {
+            display: none !important;
           }
 
           .attrEntry input,
