@@ -369,7 +369,7 @@ export default function LoginLayout({ children }: any): any {
             margin-top: 2.5rem;
           }
 
-          .b2c-signup #attributeList > ul > li:last-child {
+          .b2c-signup #attributeList > ul > li.TextBox:last-child {
             margin-bottom: 400px;
           }
 
