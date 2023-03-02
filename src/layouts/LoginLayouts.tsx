@@ -321,7 +321,7 @@ export default function LoginLayout({ children }: any): any {
 
           .CheckboxMultiSelect {
             border-bottom: 1px solid #919191;
-            padding-bottom: 10px;
+            padding-bottom: 15px;
             list-style-type: none;
           }
 
@@ -334,14 +334,9 @@ export default function LoginLayout({ children }: any): any {
           }
 
           .CheckboxMultiSelect .error {
-            order: 3;
-            text-align: left;
             width: 100%;
+            bottom: -13px;
           }
-
-          // .b2c-signup .TextBox + .CheckboxMultiSelect {
-          //   margin-top: 450px;
-          // }
 
           input[type="checkbox"] {
             width: initial !important;
@@ -368,7 +363,7 @@ export default function LoginLayout({ children }: any): any {
           }
 
           #attributeList li.TextBox:nth-child(5) {
-            margin-bottom: 450px;
+            margin-bottom: 440px;
           }
 
           #attributeList
