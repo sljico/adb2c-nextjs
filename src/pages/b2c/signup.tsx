@@ -12,13 +12,13 @@ const Signup: NextPage<unknown> = () => {
         {/* <script type="text/javascript" src="/js/test2.js"></script> */}
       </Head>
       <LoginLayout>
-        <div>
-          <div className="carescoutB2cLayout">
-            <section>
-              <div id="api" className="b2c-signup"></div>
-            </section>
-          </div>
+        <div className="carescoutB2cLayout">
+          <section>
+            <div id="api" className="b2c-signup"></div>
+          </section>
+        </div>
 
+        <div>
           <div id="extension_termsOfUseContentWrapper">
             <li className="TextBox">
               <div className="attrEntry">
