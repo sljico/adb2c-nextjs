@@ -361,16 +361,8 @@ export default function LoginLayout({ children }: any): any {
             padding-bottom: 1.75rem;
           }
 
-          #attributeList li.TextBox:nth-child(1) {
-            background-color: green;
-          }
-
-          #attributeList li.TextBox:nth-child(4) {
-            background-color: blue;
-          }
-
-          #attributeList li.TextBox:last-of-type {
-            background-color: red;
+          #attributeList li.TextBox:nth-child(5) {
+            margin-bottom: 400px;
           }
 
           #attributeList
