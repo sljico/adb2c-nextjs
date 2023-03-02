@@ -165,8 +165,11 @@ export default function LoginLayout({ children }: any): any {
             margin-top: 1.1rem;
           }
 
+          #passwordEntryMismatch,
+          #fieldIncorrect,
+          #claimVerificationServerError,
           #requiredFieldMissing {
-            display: none !important;
+            top: -30px;
           }
 
           .attrEntry input,
@@ -371,7 +374,7 @@ export default function LoginLayout({ children }: any): any {
             > li:not(:first-child):not(:nth-child(2)):not(
               .CheckboxMultiSelect
             ) {
-            margin-top: 2.5rem;
+            margin-top: 2rem;
           }
 
           #attributeList + .buttons {
