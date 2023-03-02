@@ -266,7 +266,7 @@ export default function LoginLayout({ children }: any): any {
 
           .extension_termsOfUseContentWrapper {
             border-top: 1px solid #909090;
-            margin: 35px 0;
+            margin-bottom: 35px;
           }
 
           .extension_termsOfUseContentWrapper .textarea a {
@@ -333,9 +333,9 @@ export default function LoginLayout({ children }: any): any {
             width: 100%;
           }
 
-          .b2c-signup .TextBox + .CheckboxMultiSelect {
-            margin-top: 450px;
-          }
+          // .b2c-signup .TextBox + .CheckboxMultiSelect {
+          //   margin-top: 450px;
+          // }
 
           input[type="checkbox"] {
             width: initial !important;
@@ -345,6 +345,8 @@ export default function LoginLayout({ children }: any): any {
           input[type="checkbox"] + label {
             flex: 1 1 auto;
             color: #333;
+            width: 90%;
+            margin-right: auto;
           }
 
           #api #emailVerificationControl_but_verify_code,
@@ -365,6 +367,10 @@ export default function LoginLayout({ children }: any): any {
               .CheckboxMultiSelect
             ) {
             margin-top: 2.5rem;
+          }
+
+          .b2c-signup #attributeList > ul > li:last-child {
+            margin-bottom: 400px;
           }
 
           #attributeList + .buttons {
