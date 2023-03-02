@@ -365,11 +365,11 @@ export default function LoginLayout({ children }: any): any {
             background-color: green;
           }
 
-          #attributeList li.TextBox:nth-child(2) {
+          #attributeList li.TextBox:nth-child(4) {
             background-color: blue;
           }
 
-          #attributeList li.TextBox:nth-child(3) {
+          #attributeList li.TextBox:nth-child(5) {
             background-color: red;
           }
 
