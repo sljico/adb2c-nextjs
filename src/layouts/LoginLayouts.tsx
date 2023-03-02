@@ -202,6 +202,7 @@ export default function LoginLayout({ children }: any): any {
             color: #f44336;
             font-size: 0.8rem;
             margin: 0;
+            position: absolute;
           }
 
           .buttons {
@@ -298,6 +299,7 @@ export default function LoginLayout({ children }: any): any {
           .extension_termsOfUseContentWrapper,
           #api ul li {
             list-style-type: none;
+            position: relative;
           }
 
           .textarea {
