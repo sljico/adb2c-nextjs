@@ -156,20 +156,14 @@ export default function LoginLayout({ children }: any): any {
             display: block;
             font-size: 1rem;
             line-height: 1.5;
+            margin: 0 0 0.5rem;
             padding: 0.3rem 0 0.55rem;
             transition: border-color 0.15s ease-in-out,
               box-shadow 0.15s ease-in-out;
             width: 100% !important;
             padding: 1.1rem;
             max-height: 56px;
-            margin-top: 1.1rem;
-          }
-
-          #passwordEntryMismatch,
-          #fieldIncorrect,
-          #claimVerificationServerError,
-          #requiredFieldMissing {
-            top: -30px;
+            margin-top: 0.75rem;
           }
 
           .attrEntry input,
@@ -208,7 +202,6 @@ export default function LoginLayout({ children }: any): any {
             color: #f44336;
             font-size: 0.8rem;
             margin: 0;
-            position: absolute;
           }
 
           .buttons {
@@ -305,7 +298,6 @@ export default function LoginLayout({ children }: any): any {
           .extension_termsOfUseContentWrapper,
           #api ul li {
             list-style-type: none;
-            position: relative;
           }
 
           .textarea {
@@ -315,7 +307,6 @@ export default function LoginLayout({ children }: any): any {
             padding-right: 25px;
             margin-top: 10px;
             overflow-y: scroll;
-            // text-align: left;
           }
 
           #extension_termsOfUseContent:focus-visible {
@@ -324,7 +315,7 @@ export default function LoginLayout({ children }: any): any {
 
           .CheckboxMultiSelect {
             border-bottom: 1px solid #919191;
-            padding-bottom: 15px;
+            padding-bottom: 10px;
             list-style-type: none;
           }
 
@@ -337,9 +328,14 @@ export default function LoginLayout({ children }: any): any {
           }
 
           .CheckboxMultiSelect .error {
+            order: 3;
+            text-align: left;
             width: 100%;
-            bottom: -13px;
           }
+
+          // .b2c-signup .TextBox + .CheckboxMultiSelect {
+          //   margin-top: 450px;
+          // }
 
           input[type="checkbox"] {
             width: initial !important;
@@ -366,7 +362,7 @@ export default function LoginLayout({ children }: any): any {
           }
 
           #attributeList li.TextBox:nth-child(5) {
-            margin-bottom: 430px;
+            margin-bottom: 400px;
           }
 
           #attributeList
@@ -374,7 +370,7 @@ export default function LoginLayout({ children }: any): any {
             > li:not(:first-child):not(:nth-child(2)):not(
               .CheckboxMultiSelect
             ) {
-            margin-top: 2rem;
+            margin-top: 2.5rem;
           }
 
           #attributeList + .buttons {
