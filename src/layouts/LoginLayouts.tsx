@@ -362,7 +362,7 @@ export default function LoginLayout({ children }: any): any {
           }
 
           #attributeList li.TextBox:nth-child(5) {
-            margin-bottom: 400px;
+            margin-bottom: 450px;
           }
 
           #attributeList
