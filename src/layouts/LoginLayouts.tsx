@@ -260,7 +260,7 @@ export default function LoginLayout({ children }: any): any {
 
           #container {
             position: absolute;
-            bottom: 370px;
+            bottom: 360px;
             width: Calc(100% - 40px);
           }
 
@@ -362,7 +362,7 @@ export default function LoginLayout({ children }: any): any {
           }
 
           #attributeList li.TextBox:nth-child(5) {
-            margin-bottom: 400px;
+            margin-bottom: 425px;
           }
 
           #attributeList
@@ -370,7 +370,7 @@ export default function LoginLayout({ children }: any): any {
             > li:not(:first-child):not(:nth-child(2)):not(
               .CheckboxMultiSelect
             ) {
-            margin-top: 2.5rem;
+            margin-top: 2rem;
           }
 
           #attributeList + .buttons {
