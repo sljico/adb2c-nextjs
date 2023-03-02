@@ -309,6 +309,7 @@ export default function LoginLayout({ children }: any): any {
             padding-right: 25px;
             margin-top: 10px;
             overflow-y: scroll;
+            // text-align: left;
           }
 
           #extension_termsOfUseContent:focus-visible {
