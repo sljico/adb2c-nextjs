@@ -333,7 +333,7 @@ export default function LoginLayout({ children }: any): any {
             width: 100%;
           }
 
-          .CheckboxMultiSelect:first-child {
+          .b2c-signup .TextBox + .CheckboxMultiSelect {
             margin-top: 450px;
           }
 
