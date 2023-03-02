@@ -377,15 +377,15 @@ export default function LoginLayout({ children }: any): any {
             color: #333;
           }
 
-          textarea::-webkit-scrollbar {
+          .textarea::-webkit-scrollbar {
             width: 10px;
           }
 
-          textarea::-webkit-scrollbar-track {
+          .textarea::-webkit-scrollbar-track {
             background: #efefef;
           }
 
-          textarea::-webkit-scrollbar-thumb {
+          .textarea::-webkit-scrollbar-thumb {
             background: #545433;
           }
 
