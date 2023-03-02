@@ -162,7 +162,7 @@ export default function LoginLayout({ children }: any): any {
             width: 100% !important;
             padding: 1.1rem;
             max-height: 56px;
-            margin-top: 1rem;
+            margin-top: 1.1rem;
           }
 
           #requiredFieldMissing {
@@ -363,7 +363,7 @@ export default function LoginLayout({ children }: any): any {
           }
 
           #attributeList li.TextBox:nth-child(5) {
-            margin-bottom: 440px;
+            margin-bottom: 430px;
           }
 
           #attributeList
