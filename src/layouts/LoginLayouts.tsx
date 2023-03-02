@@ -82,7 +82,7 @@ export default function LoginLayout({ children }: any): any {
             user-select: none;
             width: 100% !important;
             border: none;
-            font-size: 1.2rem !important;
+            font-size: 1.188rem !important;
             text-transform: capitalize !important;
           }
 
@@ -121,7 +121,7 @@ export default function LoginLayout({ children }: any): any {
           .create > p {
             color: #9e9e9e;
             display: flex;
-            font-size: 1.2rem;
+            font-size: 1.188rem;
             justify-content: flex-end;
             margin: 0;
           }
@@ -140,7 +140,7 @@ export default function LoginLayout({ children }: any): any {
           .entry-item label {
             color: #000;
             letter-spacing: -0.1px;
-            font-size: 1.2rem;
+            font-size: 1.188rem;
             font-weight: 500;
           }
 
