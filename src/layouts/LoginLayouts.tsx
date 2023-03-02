@@ -361,7 +361,7 @@ export default function LoginLayout({ children }: any): any {
             padding-bottom: 1.75rem;
           }
 
-          li.TextBox:nth-child(2) {
+          li.TextBox {
             background-color: green;
           }
 
