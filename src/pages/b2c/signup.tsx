@@ -18,8 +18,8 @@ const Signup: NextPage<unknown> = () => {
           </section>
         </div>
 
-        <div>
-          <div id="extension_termsOfUseContentWrapper">
+        <div id="container">
+          <div className="extension_termsOfUseContentWrapper">
             <li className="TextBox">
               <div className="attrEntry">
                 <p>Terms and Conditions</p>

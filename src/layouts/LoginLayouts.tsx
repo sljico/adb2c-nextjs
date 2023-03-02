@@ -258,17 +258,23 @@ export default function LoginLayout({ children }: any): any {
             margin-bottom: 1rem;
           }
 
-          #extension_termsOfUseContentWrapper {
+          #container {
+            position: absolute;
+            bottom: 370px;
+            width: Calc(100% - 40px);
+          }
+
+          .extension_termsOfUseContentWrapper {
             border-top: 1px solid #909090;
             margin: 35px 0;
           }
 
-          #extension_termsOfUseContentWrapper .textarea a {
+          .extension_termsOfUseContentWrapper .textarea a {
             color: #337fff;
           }
 
-          #extension_termsOfUseContentWrapper + p,
-          #extension_termsOfUseContentWrapper p {
+          .extension_termsOfUseContentWrapper + p,
+          .extension_termsOfUseContentWrapper p {
             margin: 0;
             border-bottom: 1px solid #919191;
             font-weight: 700;
@@ -276,11 +282,11 @@ export default function LoginLayout({ children }: any): any {
             color: #333;
           }
 
-          #extension_termsOfUseContentWrapper + p {
+          .extension_termsOfUseContentWrapper + p {
             padding-bottom: 20px;
           }
 
-          #extension_termsOfUseContentWrapper p {
+          .extension_termsOfUseContentWrapper p {
             border: none;
           }
 
@@ -289,7 +295,7 @@ export default function LoginLayout({ children }: any): any {
             margin: 0;
           }
 
-          #extension_termsOfUseContentWrapper,
+          .extension_termsOfUseContentWrapper,
           #api ul li {
             list-style-type: none;
           }
@@ -325,6 +331,10 @@ export default function LoginLayout({ children }: any): any {
             order: 3;
             text-align: left;
             width: 100%;
+          }
+
+          .CheckboxMultiSelect:first-child {
+            margin-top: 450px;
           }
 
           input[type="checkbox"] {
