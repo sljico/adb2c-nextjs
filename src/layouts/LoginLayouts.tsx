@@ -369,7 +369,7 @@ export default function LoginLayout({ children }: any): any {
             background-color: blue;
           }
 
-          #attributeList li.TextBox:last-child {
+          #attributeList li.TextBox:last-of-type {
             background-color: red;
           }
 
