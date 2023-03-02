@@ -163,7 +163,7 @@ export default function LoginLayout({ children }: any): any {
             width: 100% !important;
             padding: 1.1rem;
             max-height: 56px;
-            margin-top: 1rem;
+            margin-top: 0.75rem;
           }
 
           .attrEntry input,
@@ -343,6 +343,10 @@ export default function LoginLayout({ children }: any): any {
           #attributeList > ul > li.TextBox:first-child {
             border-bottom: 1px solid #909090;
             padding-bottom: 1.75rem;
+          }
+
+          #attributeList > ul > li:not(:first-child):not(:nth-child(2)) {
+            margin-top: 2.5rem;
           }
 
           #attributeList + .buttons {
