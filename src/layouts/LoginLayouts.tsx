@@ -66,7 +66,7 @@ export default function LoginLayout({ children }: any): any {
             margin-bottom: 1.5rem !important;
             text-align: center;
             font-size: 1.15rem;
-            color: #323339;
+            color: #fff;
             margin: 0;
           }
 
@@ -111,13 +111,13 @@ export default function LoginLayout({ children }: any): any {
 
           .create,
           .localAccount {
-            border-top: 1px solid #909090;
+            border-top: 1px solid #3d247f;
             margin-top: 1.5rem;
             padding-top: 1.5rem;
           }
 
           .create > p {
-            color: #9e9e9e;
+            color: #fff;
             display: flex;
             font-size: 1.188rem;
             justify-content: flex-end;
@@ -126,6 +126,7 @@ export default function LoginLayout({ children }: any): any {
 
           #createAccount {
             margin-left: 0.25rem;
+            color: #e7fe5f;
           }
 
           .attrEntry,
@@ -206,12 +207,12 @@ export default function LoginLayout({ children }: any): any {
             margin-top: 1.5rem;
           }
 
-          .buttons #email_ver_but_resend {
-            background-color: #fff;
-            color: #333;
-            border: 1px solid #333;
-            font-weight: 400;
-          }
+          // .buttons #email_ver_but_resend {
+          //   background-color: #fff;
+          //   color: #333;
+          //   border: 1px solid #333;
+          //   font-weight: 400;
+          // }
 
           #api #emailVerificationControl_but_verify_code,
           #api #emailVerificationControl_but_send_new_code {
@@ -263,7 +264,7 @@ export default function LoginLayout({ children }: any): any {
           }
 
           .extension_termsOfUseContentWrapper {
-            border-top: 1px solid #909090;
+            border-top: 1px solid #3d247f;
             margin-bottom: 35px;
           }
 
@@ -277,7 +278,7 @@ export default function LoginLayout({ children }: any): any {
             border-bottom: 1px solid #919191;
             font-weight: 700;
             font-size: 28px;
-            color: #333;
+            color: #fff;
           }
 
           .extension_termsOfUseContentWrapper + p {
@@ -341,7 +342,7 @@ export default function LoginLayout({ children }: any): any {
 
           input[type="checkbox"] + label {
             flex: 1 1 auto;
-            color: #333;
+            color: #fff;
             width: 90%;
             margin-right: auto;
           }
@@ -355,7 +356,7 @@ export default function LoginLayout({ children }: any): any {
           }
 
           #attributeList > ul > li.TextBox:first-child {
-            border-bottom: 1px solid #909090;
+            border-bottom: 1px solid #3d247f;
             padding-bottom: 1.75rem;
           }
 
@@ -424,23 +425,23 @@ export default function LoginLayout({ children }: any): any {
           }
 
           input::-webkit-input-placeholder {
-            color: #333;
+            color: #fff;
           }
 
           ::-webkit-input-placeholder {
-            color: #333;
+            color: #fff;
           }
 
           :-moz-placeholder {
-            color: #333;
+            color: #fff;
           }
 
           ::-moz-placeholder {
-            color: #333;
+            color: #fff;
           }
 
           :-ms-input-placeholder {
-            color: #333;
+            color: #fff;
           }
 
           .textarea::-webkit-scrollbar {
