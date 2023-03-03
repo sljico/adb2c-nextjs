@@ -189,7 +189,7 @@ export default function LoginLayout({ children }: any): any {
 
           .verificationInfoText {
             padding-bottom: 15px;
-            display: block !important;
+            display: block;
           }
 
           #forgotPassword {
