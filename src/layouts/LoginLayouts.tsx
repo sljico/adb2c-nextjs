@@ -189,6 +189,7 @@ export default function LoginLayout({ children }: any): any {
 
           .verificationInfoText {
             padding-bottom: 15px;
+            display: block !important;
           }
 
           #forgotPassword {
@@ -206,6 +207,13 @@ export default function LoginLayout({ children }: any): any {
 
           .buttons {
             margin-top: 1.5rem;
+          }
+
+          .buttons.verify {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+            justify-content: space-between;
           }
 
           #api #emailVerificationControl_but_verify_code,
@@ -369,6 +377,7 @@ export default function LoginLayout({ children }: any): any {
             flex-wrap: wrap;
           }
 
+          #email_ver_input_label,
           .b2c-sociallogin #attributeList ul li {
             width: 100%;
           }
@@ -466,7 +475,6 @@ export default function LoginLayout({ children }: any): any {
           @media (min-width: 400px) {
             .buttons #email_ver_but_verify {
               margin-bottom: 0;
-              margin-right: 36px;
             }
 
             .buttons #email_ver_but_verify,
