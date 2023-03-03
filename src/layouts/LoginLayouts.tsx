@@ -336,10 +336,6 @@ export default function LoginLayout({ children }: any): any {
             bottom: -12px;
           }
 
-          // .b2c-signup .TextBox + .CheckboxMultiSelect {
-          //   margin-top: 450px;
-          // }
-
           input[type="checkbox"] {
             width: initial !important;
             margin: 0;
@@ -368,12 +364,50 @@ export default function LoginLayout({ children }: any): any {
             margin-bottom: 420px;
           }
 
+          .b2c-sociallogin #attributeList ul {
+            display: flex;
+            flex-wrap: wrap;
+          }
+
+          .b2c-sociallogin #attributeList ul li {
+            width: 100%;
+          }
+
+          .b2c-sociallogin
+            #attributeList
+            ul
+            li.CheckboxMultiSelect:nth-child(1) {
+            order: 3;
+          }
+
+          .b2c-sociallogin
+            #attributeList
+            ul
+            li.CheckboxMultiSelect:nth-child(2) {
+            order: 4;
+          }
+
+          .b2c-sociallogin
+            #attributeList
+            ul
+            li.CheckboxMultiSelect:nth-child(3) {
+            order: 5;
+          }
+
+          .b2c-sociallogin
+            #attributeList
+            ul
+            li.CheckboxMultiSelect:nth-child(3)
+            + li.TextBox {
+            display: none;
+          }
+
           #attributeList
             > ul
             > li:not(:first-child):not(:nth-child(2)):not(
               .CheckboxMultiSelect
             ) {
-            margin-top: 2rem;
+            margin-top: 0.65rem;
           }
 
           #attributeList + .buttons {
