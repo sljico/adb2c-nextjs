@@ -341,10 +341,10 @@ export default function LoginLayout({ children }: any): any {
             margin-right: auto;
           }
 
-          #emailVerificationControl_but_verify_code,
-          .sendCode,
-          .sendButton,
-          #cancel {
+          #api #emailVerificationControl_but_verify_code,
+          #api .sendCode,
+          #api .sendButton,
+          #api #cancel {
             background-color: transparent;
             color: #fff;
             border: 1px solid #fff;
