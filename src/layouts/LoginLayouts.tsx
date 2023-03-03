@@ -24,7 +24,7 @@ export default function LoginLayout({ children }: any): any {
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
-            background-color: #fff;
+            background-color: #7848ff;
             font-size: inherit;
           }
 
@@ -71,8 +71,8 @@ export default function LoginLayout({ children }: any): any {
           }
 
           #api button {
-            background-color: #7848ff;
-            color: #fff;
+            background-color: #e7fe5f;
+            color: #333;
             font-weight: bold;
             border-radius: 10rem !important;
             box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%),
@@ -99,12 +99,6 @@ export default function LoginLayout({ children }: any): any {
 
           button:disabled {
             opacity: 0.65;
-          }
-
-          #api .options button {
-            // font-weight: 400;
-            // color: #323339;
-            // background-color: #fff;
           }
 
           .options > div > button:before {
@@ -142,7 +136,7 @@ export default function LoginLayout({ children }: any): any {
 
           .attrEntry label,
           .entry-item label {
-            color: #000;
+            color: #fff;
             letter-spacing: -0.1px;
             font-size: 1.188rem;
             font-weight: 500;
@@ -355,8 +349,9 @@ export default function LoginLayout({ children }: any): any {
           #api #emailVerificationControl_but_verify_code,
           #api .sendCode,
           #api #cancel {
-            background-color: #fff;
-            color: #323339;
+            background-color: #transparent;
+            color: #fff;
+            border: 1px solid #fff;
           }
 
           #attributeList > ul > li.TextBox:first-child {
