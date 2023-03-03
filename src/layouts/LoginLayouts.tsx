@@ -54,6 +54,10 @@ export default function LoginLayout({ children }: any): any {
             padding: 0 20px;
           }
 
+          .b2c-sociallogin .intro > p {
+            margin-bottom: 0 !important;
+          }
+
           .intro > p,
           #api h2,
           #api h3 {
