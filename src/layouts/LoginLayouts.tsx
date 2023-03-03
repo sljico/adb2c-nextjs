@@ -360,6 +360,7 @@ export default function LoginLayout({ children }: any): any {
             padding-bottom: 1.75rem;
           }
 
+          .b2c-sociallogin #attributeList ul li:last-child,
           .b2c-signup #attributeList li.TextBox:nth-child(5) {
             margin-bottom: 420px;
           }
@@ -371,10 +372,6 @@ export default function LoginLayout({ children }: any): any {
 
           .b2c-sociallogin #attributeList ul li {
             width: 100%;
-          }
-
-          .b2c-sociallogin #attributeList ul li:last-child {
-            background: red;
           }
 
           .b2c-sociallogin .attrEntry input,
