@@ -194,6 +194,7 @@ export default function LoginLayout({ children }: any): any {
           #forgotPassword {
             float: right;
             font-size: 0.8rem;
+            color: #e7fe5f;
           }
 
           .error,
