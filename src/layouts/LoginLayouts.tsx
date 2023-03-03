@@ -357,6 +357,7 @@ export default function LoginLayout({ children }: any): any {
             background-color: transparent;
             color: #fff;
             border: 1px solid #fff;
+            font-weight: 400;
           }
 
           #attributeList > ul > li.TextBox:first-child {
