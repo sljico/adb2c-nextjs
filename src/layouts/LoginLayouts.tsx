@@ -151,7 +151,7 @@ export default function LoginLayout({ children }: any): any {
             background-image: none;
             border: 1px solid #cccdd1;
             border-radius: 16px;
-            color: #495057;
+            color: #fff;
             display: block;
             font-size: 1rem;
             line-height: 1.5;
@@ -180,7 +180,7 @@ export default function LoginLayout({ children }: any): any {
 
           .attrEntry input:focus,
           .entry-item input:focus {
-            border: 1px solid #7848ff;
+            border: 1px solid #e7fe5f;
           }
 
           .verifyInput {
@@ -206,13 +206,6 @@ export default function LoginLayout({ children }: any): any {
           .buttons {
             margin-top: 1.5rem;
           }
-
-          // .buttons #email_ver_but_resend {
-          //   background-color: #fff;
-          //   color: #333;
-          //   border: 1px solid #333;
-          //   font-weight: 400;
-          // }
 
           #api #emailVerificationControl_but_verify_code,
           #api #emailVerificationControl_but_send_new_code {
@@ -269,7 +262,7 @@ export default function LoginLayout({ children }: any): any {
           }
 
           .extension_termsOfUseContentWrapper .textarea a {
-            color: #337fff;
+            color: #fff;
           }
 
           .extension_termsOfUseContentWrapper + p,
@@ -306,6 +299,7 @@ export default function LoginLayout({ children }: any): any {
             padding-right: 25px;
             margin-top: 10px;
             overflow-y: scroll;
+            color: #fff;
           }
 
           #extension_termsOfUseContent:focus-visible {
@@ -347,10 +341,11 @@ export default function LoginLayout({ children }: any): any {
             margin-right: auto;
           }
 
-          #api #emailVerificationControl_but_verify_code,
-          #api .sendCode,
-          #api #cancel {
-            background-color: #transparent;
+          #emailVerificationControl_but_verify_code,
+          .sendCode,
+          .sendButton,
+          #cancel {
+            background-color: transparent;
             color: #fff;
             border: 1px solid #fff;
           }
