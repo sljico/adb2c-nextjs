@@ -344,8 +344,7 @@ export default function LoginLayout({ children }: any): any {
 
           #api #emailVerificationControl_but_verify_code,
           #api .sendCode,
-          #api .sendButton,
-          #api:not(#email_ver_but_send),
+          #api #email_ver_but_resend,
           #api #cancel {
             background-color: transparent;
             color: #fff;
