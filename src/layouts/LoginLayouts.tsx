@@ -373,6 +373,11 @@ export default function LoginLayout({ children }: any): any {
             width: 100%;
           }
 
+          .b2c-sociallogin .attrEntry input,
+          .entry-item input {
+            margin-bottom: 0;
+          }
+
           .b2c-sociallogin
             #attributeList
             ul
