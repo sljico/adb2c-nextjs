@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header/Header";
 import { Head } from "next/document";
 import Script from "next/script";
+import Image from "next/image";
 
 // @ts-ignore
 export default function LoginLayout({ children }: any): any {
@@ -11,7 +12,7 @@ export default function LoginLayout({ children }: any): any {
           <section>
             <div className="card">
               <div className="card-header">
-                <img src="https://fakeimg.pl/120/" />
+                <Image src="/logo.png" alt="" />
               </div>
               <div className="card-body">{children}</div>
             </div>
