@@ -12,7 +12,12 @@ export default function LoginLayout({ children }: any): any {
         <div className="carescoutB2cLayout">
           <section>
             <div className="card">
-              <div className="card-header"></div>
+              <div className="card-header">
+                <img
+                  src="https://gworthpocstore.blob.core.windows.net/gworth/klika.png"
+                  alt="logo"
+                />
+              </div>
               <div className="card-body">{children}</div>
             </div>
           </section>
