@@ -14,6 +14,7 @@ export default function LoginLayout({ children }: any): any {
             <div className="card">
               <div className="card-header">
                 <Image src={logo} alt="" />
+                <img src="/logo.png" alt="" />
               </div>
               <div className="card-body">{children}</div>
             </div>
