@@ -57,6 +57,10 @@ export default function LoginLayout({ children }: any): any {
             min-width: 0;
           }
 
+          .card-header {
+            text-align: center;
+          }
+
           .card-body {
             flex: 1 1 auto;
             padding: 0 20px;
