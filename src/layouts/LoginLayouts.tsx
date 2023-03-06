@@ -59,6 +59,7 @@ export default function LoginLayout({ children }: any): any {
 
           .card-header {
             text-align: center;
+            margin-bottom: 44px;
           }
 
           .card-body {
