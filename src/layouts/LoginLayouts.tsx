@@ -10,6 +10,9 @@ export default function LoginLayout({ children }: any): any {
         <div className="carescoutB2cLayout">
           <section>
             <div className="card">
+              <div className="card-header">
+                <img src="https://fakeimg.pl/120/" />
+              </div>
               <div className="card-body">{children}</div>
             </div>
           </section>
