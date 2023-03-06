@@ -2,6 +2,7 @@ import { Header } from "@/components/Header/Header";
 import { Head } from "next/document";
 import Script from "next/script";
 import Image from "next/image";
+import logo from "../../public/logo.png";
 
 // @ts-ignore
 export default function LoginLayout({ children }: any): any {
@@ -12,7 +13,7 @@ export default function LoginLayout({ children }: any): any {
           <section>
             <div className="card">
               <div className="card-header">
-                <Image src="/logo.png" alt="" />
+                <Image src={logo} alt="" />
               </div>
               <div className="card-body">{children}</div>
             </div>
