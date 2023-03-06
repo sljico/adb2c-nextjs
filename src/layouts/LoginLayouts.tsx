@@ -246,17 +246,17 @@ export default function LoginLayout({ children }: any): any {
             word-wrap: break-word;
           }
 
-          #displayName_label,
-          #displayName,
-          #email_intro,
-          .editButton,
-          .attrEntry .tiny,
-          .b2c-signup .intro,
-          .b2c-signup .heading + .buttons,
-          .divider,
-          .heading {
-            display: none !important;
-          }
+          // #displayName_label,
+          // #displayName,
+          // #email_intro,
+          // .editButton,
+          // .attrEntry .tiny,
+          // .b2c-signup .intro,
+          // .b2c-signup .heading + .buttons,
+          // .divider,
+          // .heading {
+          //   display: none !important;
+          // }
 
           #continue {
             margin-bottom: 1rem;
