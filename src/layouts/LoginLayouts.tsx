@@ -9,7 +9,7 @@ export default function LoginLayout({ children }: any): any {
   return (
     <>
       <Head>
-        <link rel="stylesheet" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
         <main id="main" role="main">
