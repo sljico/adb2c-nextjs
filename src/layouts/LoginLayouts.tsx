@@ -1,5 +1,5 @@
 import { Header } from "@/components/Header/Header";
-import { Head } from "next/head";
+import Head from "next/head";
 import Script from "next/script";
 import Image from "next/image";
 import logo from "../../public/logo.png";
