@@ -9,7 +9,10 @@ export default function LoginLayout({ children }: any): any {
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAA/dJREFUWEftlttPnFUUxX8DwzAzUG4DZcq1pQKFWFpa1EQbiJhWY0zrrQ+aGB9NfNFH/xgfjImJ+uJLg1apRGNSlEIxNthAb4JQCkw75TLAXM1iz9iEzOXjqS+cZJLJyfnOXmfttdfers9eS6V4isu1D2Cfgb0wUFQMpV4o8YLbA8XFgAtSSUjEIR6D2BZEtyCZdKZsRyIsKgJvOVQHoekZONgKlXVQdgBcRRDbho1VeLwMS3MwP2P/tyOFgRQEoJcqcMdpaD8FtQ3gK0+z4DYGkgljILoNm2uwNAvT4zAzAavLkEjkZiMvAAVv6oTeQThyHKpqjXqXaE/Zj5SxoD0tpSMWhdB9mLoKf47Yf4HMtnICUL5rG6H/InT2QVmFBdJFm+sQWYetDUjEwOMHnx/8FeAptXNiJLQI16/A9WFYDaUB70KRHYALyqrg1CA8/zoEDtlXElloAaavwT9TdqnoLfFAXTN09EHzMaiohmK3gVi4DSNfw+1JE+fulRVAkRuaOuDch9DaBe4SC754D34fssvWHtreTgpcUOqDQCP0DMDJATgQsP31MFy7DFcvweqKQwDeMjjeDwMXn7x+/RGMDsH4T6Zw5Xr3Ki6BxnYYeBeCR6xMYzFjSyyE5h0CqKyFl9+Dnn5TvILp9UOfw90blvdcS+BbuqGmHsSkhLoRhluTEHnsEECgAc5/DEdPWC5V59MTcPkLWJnLLqbM1RKgNCE2MpUhU4puZq+ErBqQoN75FFq67JLNDfjrV/jlW3j0ID8AZ/735FROAG9/Aq3dTwlATQO88RG091oFqHxujsHwl7AyXzgF+ibTJ1QlSoHMKZtwszIgnx98H3rOWA9QPc/fMg1I0XlF6IemY1AZMBEquEp27m8zMEc+IOX3vgIvvQnV9faJLhn7HsZ+tHrONshJsME2OPMWNLSZbcejMHsTRr6BhwsOAYg+1fPZD6D1WVO1LpKrjV6COzcgEjYjEpCM8gVWpSvwYlFdVF1y8mf47TsILzkEoA5XXgV956DvVagJ2ocqx+V/rcvNTllFxONpFzwER09C2wmoPpi24gQs3oUrX5kPaFZwlAIdytD54gVrxZneL++XoUTWYCtiAvX4wFcG5ZUgI1IjU9PSiydH4I8fcqctbzv2eKG5C06fhcPdUBEwYJkl+hVIVCsNWtqTaBV8ahQmho21ZDy7QxQcSARCTabrBeh8ztSt9rvjdmkwGSBiQy06vAwz4zYPaBbIVzUFAQi3KJUm6lqgvgWCh6061P/1cglUgRXs/h14cM9mAaUq1yDyv3U7HUplyaprtV2vH8SMGNC+an1nJEszsDOUJpxZtiMG9urvezm/D2Cfgf8AT23a8GzGkBgAAAAASUVORK5CYII="
+        />
       </Head>
       <div>
         <main id="main" role="main">
