@@ -321,7 +321,6 @@ export default function LoginLayout({ children }: any): any {
             #email_intro,
             .editButton,
             .attrEntry .tiny,
-            .b2c-signup .intro,
             .b2c-signup .heading + .buttons,
             .divider,
             .heading {
