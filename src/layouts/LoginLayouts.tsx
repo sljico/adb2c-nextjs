@@ -22,7 +22,7 @@ export default function LoginLayout({ children }: any): any {
                 <div className="card-header">
                   <svg
                     width="200"
-                    height="60"
+                    height="40"
                     viewBox="0 0 280 60"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
