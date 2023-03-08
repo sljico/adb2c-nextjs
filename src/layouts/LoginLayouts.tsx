@@ -21,8 +21,8 @@ export default function LoginLayout({ children }: any): any {
               <div className="card">
                 <div className="card-header">
                   <svg
-                    width="140"
-                    height="20"
+                    width="200"
+                    height="60"
                     viewBox="0 0 280 60"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
