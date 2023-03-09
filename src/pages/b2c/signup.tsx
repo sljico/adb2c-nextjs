@@ -11,7 +11,7 @@ const Signup: NextPage<unknown> = () => {
         {/* <script type="text/javascript" src="..."></script> */}
         {/* <script type="text/javascript" src="/js/test2.js"></script> */}
       </Head>
-      <LoginLayout seoContent={{ pageTile: "Sign up", pageDescription: "" }}>
+      <LoginLayout>
         <div className="carescoutB2cLayout">
           <section>
             <div id="api" className="b2c-signup"></div>
