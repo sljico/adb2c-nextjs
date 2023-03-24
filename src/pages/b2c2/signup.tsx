@@ -16,7 +16,7 @@ export default function Signup() {
         <div id="extension_termsOfUseContentWrapper">
           <li className="TextBox">
             <div className="attrEntry">
-              <p>Terms and Conditions</p>
+              <p>Terms and Conditions2</p>
 
               <div className="textarea">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
