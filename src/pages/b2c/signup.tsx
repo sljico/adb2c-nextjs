@@ -85,7 +85,7 @@ const Signup: NextPage<unknown> = () => {
           }
         `}
       </Script> */}
-      <Script>
+      <Script strategy="beforeInteractive">
         {`
         var modal = document.getElementById("myModal");
 
