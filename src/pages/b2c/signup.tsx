@@ -25,88 +25,19 @@ const Signup: NextPage<unknown> = () => {
                 <p>Terms and Conditions</p>
 
                 <div className="textarea">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Proin gravida hendrerit lectus a. Morbi tristique senectus et
-                  netus et malesuada fames ac. Vitae suscipit tellus mauris a
-                  diam. Ullamcorper dignissim cras tincidunt lobortis feugiat.
-                  Sit amet facilisis magna etiam tempor orci eu lobortis
-                  elementum. In cursus turpis massa tincidunt dui ut ornare
-                  lectus sit. In eu mi bibendum neque egestas congue quisque
-                  egestas. Nunc non blandit massa enim nec dui. Sed augue lacus
-                  viverra vitae congue eu consequat ac. Sit amet venenatis urna
-                  cursus. Volutpat est velit egestas dui id ornare. Sapien eget
-                  mi proin sed libero enim sed faucibus turpis. Risus pretium
-                  quam vulputate dignissim suspendisse in. Eros in cursus turpis
-                  massa tincidunt dui ut ornare lectus. Nunc consequat interdum
-                  varius sit amet mattis vulputate enim nulla. Semper quis
-                  lectus nulla at volutpat diam ut venenatis tellus. Gravida
-                  neque convallis a cras. Montes nascetur ridiculus mus mauris
-                  vitae. Cras adipiscing enim eu turpis. Nunc faucibus a
-                  pellentesque sit amet porttitor eget dolor morbi. Massa id
-                  neque aliquam vestibulum morbi blandit cursus. Tortor vitae
-                  purus faucibus ornare. Aliquam sem fringilla ut morbi
-                  tincidunt augue interdum velit euismod. At tellus at urna
-                  condimentum mattis pellentesque id nibh. In tellus integer
-                  feugiat scelerisque varius morbi enim nunc. Elementum nisi
-                  quis eleifend quam adipiscing vitae proin sagittis nisl.
-                  Euismod lacinia at quis risus sed vulputate odio ut. Eu turpis
-                  egestas pretium aenean pharetra magna ac. Morbi leo urna
-                  molestie at elementum eu facilisis. Lectus magna fringilla
-                  urna porttitor rhoncus dolor purus non. Adipiscing elit
-                  pellentesque habitant morbi tristique senectus et netus et.
-                  Morbi tincidunt augue interdum velit euismod in pellentesque
-                  massa. Augue lacus viverra vitae congue eu consequat ac felis
-                  donec. Morbi tincidunt augue interdum velit euismod. Dui
-                  faucibus in ornare quam viverra orci. Neque ornare aenean
-                  euismod elementum. Aliquam malesuada bibendum arcu vitae.
-                  Tristique senectus et netus et malesuada fames ac. Quisque
-                  egestas diam in arcu cursus euismod quis viverra nibh. Laoreet
-                  id donec ultrices tincidunt arcu non sodales. Semper auctor
-                  neque vitae tempus quam pellentesque. Lobortis elementum nibh
-                  tellus molestie nunc non. Nulla at volutpat diam ut venenatis.
-                  Aliquet eget sit amet tellus cras adipiscing enim. Sed euismod
-                  nisi porta lorem mollis aliquam ut. Enim diam vulputate ut
-                  pharetra. Est ultricies integer quis auctor elit sed vulputate
-                  mi sit. Adipiscing enim eu turpis egestas pretium. Arcu vitae
-                  elementum curabitur vitae nunc sed velit dignissim sodales.
-                  Sit amet commodo nulla facilisi. Venenatis cras sed felis eget
-                  velit aliquet sagittis id consectetur. Purus faucibus ornare
-                  suspendisse sed nisi. Nunc faucibus a pellentesque sit amet
-                  porttitor eget dolor morbi. Nunc sed blandit libero volutpat
-                  sed cras. Ullamcorper eget nulla facilisi etiam dignissim diam
-                  quis enim lobortis. A diam sollicitudin tempor id eu nisl.
-                  Sapien et ligula ullamcorper malesuada proin libero nunc.
-                  Interdum consectetur libero id faucibus. Lacus sed turpis
-                  tincidunt id aliquet. Augue mauris augue neque gravida in
-                  fermentum et sollicitudin. Pellentesque adipiscing commodo
-                  elit at imperdiet. Sit amet porttitor eget dolor morbi non.
-                  Sed nisi lacus sed viverra tellus in. Nullam ac tortor vitae
-                  purus. Neque aliquam vestibulum morbi blandit cursus risus at.
-                  Imperdiet proin fermentum leo vel orci porta non. Tortor
-                  aliquam nulla facilisi cras fermentum odio. Proin sed libero
-                  enim sed faucibus turpis in. Nunc congue nisi vitae suscipit
-                  tellus mauris a diam maecenas.
-                  <br />
-                  <br />
-                  <div>
-                    <a href="#">Terms of Service</a>
-                  </div>
-                  <br />
-                  <br />
-                  <div>
-                    <a href="#">Privacy Policy</a>
-                  </div>
-                  <br />
-                  <br />
-                  <div>
-                    <a href="#">Accessibility</a>
-                  </div>
+                  <button id="myBtn">Open Modal</button>
                 </div>
               </div>
             </li>
           </div>
           <p>HIPPA authorization</p>
+        </div>
+
+        <div id="myModal" className="modal">
+          <div className="modal-content">
+            <span className="close">&times;</span>
+            <p>Some text in the Modal..</p>
+          </div>
         </div>
       </LoginLayout>
       {/* <script type="text/javascript" src="/js/test2.js"></script> */}
@@ -154,6 +85,39 @@ const Signup: NextPage<unknown> = () => {
           }
         `}
       </Script> */}
+      <Script>
+        {`
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        console.log(modal, btn, span);
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          console.log('click')
+          modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          console.log('close')
+          modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          console.log('outside')
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+      `}
+      </Script>
     </>
   );
 };
