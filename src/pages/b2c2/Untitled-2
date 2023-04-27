@@ -1,0 +1,17 @@
+// var termsOfUseModal = document.getElementById("termsOfUse"); // // Get the
+button that opens the modal // var termsOfUseBtn =
+document.getElementById("terms-of-use"); // // Get the
+<span>
+  element that closes the modal // var span =
+  document.getElementsByClassName("close")[0]; // // When the user clicks the
+  button, open the modal // termsOfUseBtn.onclick = function() { //
+  console.log('click') // termsOfUseModal.style.display = "block"; // } // //
+  When the user clicks on
+  <span>
+    (x), close the modal // span.onclick = function() { // console.log('close')
+    // termsOfUseModal.style.display = "none"; // } // // When the user clicks
+    anywhere outside of the modal, close it // window.onclick = function(event)
+    { // console.log('outside') // if (event.target == termsOfUseModal) { //
+    modal.style.display = "none"; // } // }</span
+  ></span
+>
